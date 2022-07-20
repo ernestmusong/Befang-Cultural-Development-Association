@@ -2,9 +2,9 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 require("dotenv").config()
-var corsOptions = {
-  origin: "http://localhost:8081"
-};
+ var corsOptions = {
+   origin: "http://localhost:8081"
+ };
 // Accessing the path module
 const path = require("path");
 //import the client build folder to the server.
@@ -13,7 +13,7 @@ app.use(express.static(path.resolve(__dirname, "./client/build")));
 app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 });
-app.use(cors(corsOptions));
+app.use(cors());
 // parse requests of content-type - application/json
 app.use(express.json());
 
