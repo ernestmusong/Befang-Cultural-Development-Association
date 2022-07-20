@@ -1,0 +1,183 @@
+{
+  "projects": [
+    
+      {
+          "id": 1,
+          "img": "water-2.jpg",
+          "title": "Water Distribution",
+          "amount": 670000,
+          "realised":0,
+          "status":"open",
+          "body":"This project is aimed at ensuring the availability of pipe-borne water throughout the Befang territory.",
+          "desc": "Distribution of pipe-borne water to all quarters in the Befang Village."
+      }  
+      
+  ],
+
+  "befangChief": 
+    
+      {
+  
+  "id": 1,
+  "chiefName":"chief name",
+  "chiefTitle":"Chief of befang",
+  "chiefImg":"water.jpg"
+   
+      },
+
+      "becudaExecutive": [
+    
+      {
+  
+  "id": 1,
+   "name": "President name",
+  "img":"water.jpg",
+  "title":"president"
+
+      },
+      {
+  
+       
+  "id": 2,
+  "name": "secretary name",
+ "img":"water.jpg",
+ "title":"secretary"
+      
+            },
+    {
+
+
+        "id": 3,
+        "name": "treasurer name",
+        "img":"water.jpg",
+        "title":"treasurer"
+            
+                    },
+        {
+
+
+        "id": 4,
+        "name": "treasurer name",
+        "img":"water.jpg",
+        "title":"treasurer"
+            
+                    }
+                
+  
+    ],
+    "beyoin": [
+    
+        {
+    
+    "id": 1,
+     "name": "Esoh Derick",
+    "img":"eleven.jpeg",
+    "title":"president",
+    "profession":"",
+     "info":"",
+     "executive":true
+        },
+        {
+    
+         
+    "id": 2,
+    "name": "Esoh jimuel",
+   "img":"jimwel.jpeg",
+   "title":"DM",
+   "executive":true,
+   "profession":"",
+          "info":""
+              },
+      {
+  
+  
+          "id": 3,
+          "name": "Ichu Kalvin",
+          "img":"kalv.jpeg",
+          "title":"Secretary General",
+          "executive":true,
+          "profession":"",
+          "info":""
+                      },
+          {
+  
+  
+          "id": 4,
+          "name": "Ngeh Radivin",
+          "img":"radivin.jpeg",
+          "title":"advicer",
+          "profession":"",
+          "info":"",
+          "executive":true
+                      }
+                  
+    
+      ],
+    "greatIcons": [
+    
+        {
+    
+    "id": 1,
+     "name": "icon name",
+    "img":"water.jpg",
+    "profession":"icon profession",
+    "work": "icon work"
+  
+        },
+        {
+    
+         
+            "id": 2,
+            "name": "icon name",
+           "img":"water.jpg",
+           "profession":"icon profession",
+           "work": "icon work"
+        
+              }
+       
+      ],
+      "webSupporters": [
+    
+        {
+    
+    "id": 1,
+     "name": "supporter name",
+    "amount":"100 cfa",
+    "branch": "branch"
+  
+        },
+        {
+    
+         
+            "id": 2,
+            "name": "supporter name",
+    "amount":"100 cfa",
+    "branch": "branch"
+        
+              }
+       
+      ],
+      "contributors": [
+    
+        {
+    
+    "id": 1,
+     "name": "contributor name",
+    "amount":"100 cfa",
+    "branch": "branch",
+    "project": "name of project"
+        },
+        {
+    
+         
+            "id": 2,
+            "name": "contributor name",
+            "amount":"100 cfa",
+            "branch": "branch",
+            "project": "name of project"
+              }
+       
+      ]
+
+
+}
