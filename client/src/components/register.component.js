@@ -26,11 +26,6 @@ import AuthService from "../services/auth.service";
      );
    }
  };
-
-  
-
-  
-
 export default class Register extends Component {
   constructor(props) {
     super(props);
@@ -177,7 +172,6 @@ export default class Register extends Component {
                        <option value=""></option>
                                     <option value="Mr">Mr</option>
                                     <option value="Mrs">Mrs</option>
-                                    <option value="Bamenda">Bamenda</option>
                                     <option value="Miss">Miss</option>
                     
                   </Select>
