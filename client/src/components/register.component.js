@@ -166,7 +166,7 @@ export default class Register extends Component {
                   <Select
                     className="form-control"
                     name="branch"
-                    value={this.state.branch}
+                    value={this.state.title}
                     onChange={this.onChangeTitle}
                     validations={[required]}>
                        <option value=""></option>
