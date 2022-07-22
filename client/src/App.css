@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 @font-face {
   font-family: Clip;
@@ -40,7 +39,6 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Oswald", sans-serif !important;
   background: var(--lightBlue); 
   color: var(--clr-grey-1);
   overflow-x: visible;
@@ -63,10 +61,12 @@ a {
   
 }
 .top-nav-support, .moble-support{
-  animation:glow 2s ease-in-out infinite alternate;
   font-family: "Clip";
-   color: var(--heroWhite); 
+   color: #fff; 
    text-transform: capitalize;
+text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
+      0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2,
+      0 0 90px #00fff2;
 }
 .text1, .text2 {
 
@@ -74,7 +74,6 @@ a {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
-  animation: shine 2s forwards, blink 3s 2s infinite;
   font-weight: bolder;
   font-family: "Clip";
   color: #ffe6ff;
@@ -89,13 +88,6 @@ a {
 }
 .title3{
   margin: 0 auto;
-}
-.logo-container h2, .mobile-logo-container h2{
-  line-height: 0;
-  font-family: "Oswald", sans-serif !important;
-  margin-top: 0;
-  color: var(--mainGreen);
-  font-weight: bolder;
 }
 
 /* navbar */
@@ -272,39 +264,7 @@ nav{
   margin-bottom: 1.25rem;
   animation: run-left 2s ease;
 }
-@keyframes shine {
-  0% {
-    color: #6b1839;
-    text-shadow: none;
-  }
-  100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  }
-}
-@keyframes blink {
-  0%,
-  22%,
-  36%,
-  75% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  }
-  28%,
-  33% {
-    color: #ff65bd;
-    text-shadow: none;
-  }
-  82%,
-  97% {
-    color: #ff2483;
-    text-shadow: none;
-  }
-}
+
 /* end hero */
 /* branch hero */
 .page-hero {
