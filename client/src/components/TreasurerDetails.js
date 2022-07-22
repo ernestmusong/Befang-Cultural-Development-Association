@@ -38,11 +38,11 @@ const TreasurerDetails=(props) => {
                     <td>{branch.treasurerName}</td>
                     <td>{branch.name}</td>
                     <td>{branch.treasurerTitle}</td>
-                    <td>{branch.treasurerNumber}</td>
+                    <td>+{branch.treasurerNumber}</td>
                 </tr>
             </tbody>
       </table>	
-      <CallNow number={`tel:${branch.treasurerNumber}` }/>
+      <CallNow number={`tel:+${branch.treasurerNumber}` }/>
     </div>
   )
 }
