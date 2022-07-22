@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
 import { Branches } from '../Data';
+import CallNow from './CallNow';
 
 const TreasurerDetails=(props) => {
     const[branch, setBranch] = useState({
@@ -21,9 +22,9 @@ const TreasurerDetails=(props) => {
           , [branch, branchId])
       
   return (
-    <div className=''>
+    <div className='' style={{height:"100vh", width:"100vw", display: "flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
          <Title3 title="send your contribution to this person" />
-     <table className="table table-bordered">
+     <table className="table table-bordered mx-auto">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
                 <tr>
                     <th scope="col">Name</th>
@@ -41,6 +42,7 @@ const TreasurerDetails=(props) => {
                 </tr>
             </tbody>
       </table>	
+      <CallNow number="tel:+237676308067"/>
     </div>
   )
 }

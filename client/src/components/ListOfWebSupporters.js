@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
 import  webSupporters  from '../db.json';
+import CommingSoon from './CommingSoon';
 
 const ListOfSupporters=() => {
     const[supporters, setSupporters] = useState([])
@@ -12,7 +13,7 @@ const ListOfSupporters=() => {
            setSupporters(supporters)
           } , [])
           
-      if(supporters.length == 2) return <Title3 title="there are no supporters at the moment." />;
+      if(supporters.length == 2) return <CommingSoon title="there are no supporters at the moment." />;
   return (
     <div>
          <Title3 title="we thank you all for your enormous support for the continued development and maintenance of this website" />

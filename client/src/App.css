@@ -48,6 +48,12 @@ body {
 a {
   text-decoration: none;
 }
+
+
+a[href^="tel:"]:before{
+  content: "\260e";
+  margin-right: 10px;
+}
 .top-nav {
   top: 0;
   display: flex;
@@ -68,7 +74,7 @@ text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
       0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2,
       0 0 90px #00fff2;
 }
-.text1, .text2 {
+.text1, .text2, .call-link {
 
   font-weight: bold;
   font-size: 2rem;
@@ -151,18 +157,17 @@ nav{
   /* position: relative; */
   display: inline-block;
   overflow: visible !important;
-  z-index: 999 !important;
+  
 }
 .dropdown-content {
   position: absolute;
   display: none;
-  height: auto;
   background-color: var(--darkBlue);
   margin-top: 2.33rem;
   width: auto;
   min-width: 200px;
   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  z-index: 999;
+  z-index: 999 !important;
 }
 .dropdown-content .dropdown-link {
   color: var(--clr-white);
@@ -346,7 +351,7 @@ nav{
   background: var(--darkBlue);
    max-width: 350px;
    height: 450px;
-    
+    margin: 0 auto;
 }
 .becuda-image-wrapper{
   width: 100%;
@@ -384,10 +389,10 @@ nav{
 .btns{
   text-transform: capitalize;
   font-size: 1.4rem;
-  background: var(--mainYellow);
-  border: 0.05rem solid var(--mainYellow);
+  background: var(--mainOrange);
+  border: 0.05rem solid var(--mainOrange);
   color: var(--clr-white);
-  border-color: var(--mainYellow);
+  border-color: var(--mainOrange);
   border-radius: 0.5rem;
   padding: 0.2rem 0.5rem;
   cursor: pointer;
@@ -397,8 +402,8 @@ nav{
 }
 
 .btns:hover {
-  background-color:  var(--mainYellow);
-  color: var(--clr-white);
+  background-color:  var(--clr-white);
+  color: var(--mainOrange);
 }
 .btns:focus {
   outline: none;
@@ -461,13 +466,11 @@ nav{
     z-index: 999;
     top: 87.16px;
   }
+ 
   .links-container .links {
     padding-top: 1rem;
-     
   }
-  .links-container {
-    overflow-y: hidden;
-  }
+  
   .info{
     color: var(--heroWhite);
     animation: info-bar-mobile 20s linear infinite;
@@ -507,6 +510,10 @@ margin-top: 117.16px;
   .contribute-page .contribute-page-child{
     width: 80%;
   }
+  .signup-component, .login-component, .beyoin-member-profile, .icon-details, .project-details, .posts-container{
+    margin-top:  117.16px !important;
+    margin: 0 auto;
+   }
    .footer-p span {
    font-size: 0.7rem;
   }
@@ -551,6 +558,7 @@ margin-top: 117.16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible !important;
   }
   .links {
     display: flex;
@@ -590,15 +598,15 @@ margin-top: 117.16px;
   font-size: 2rem !important;
 }
   
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
+body {
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1;
+}
    
   .chief-container{
     width: 50%;

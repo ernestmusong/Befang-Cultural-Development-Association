@@ -31,16 +31,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.logOut = this.logOut.bind(this);
-    this.navTransition = this.navTransition.bind(this);
     this.clearHeight = this.clearHeight.bind(this);
     this.handleClickMenu = this.handleClickMenu.bind(this);
-
     this.state = {
       showModeratorBoard: false,
       showAdminBoard: false,
       currentUser: undefined,
       height: 0,
-      transition: "none",
+      overFlow: "hidden",
+       
     };
   }
 
@@ -72,19 +71,17 @@ class App extends Component {
       currentUser: undefined,
     });
   }
-   navTransition (NavHeight) {
-    return (NavHeight==="auto" ?  this.setState({transition:"3s ease"}) : this.setState({transition:"none"}));
-  }
+   
    clearHeight (NavHeight){
-    return (NavHeight==="auto" ? this.setState({height:"0"}) : this.setState({height:"0"}));
+    return (NavHeight === "auto" ? this.setState({height:"0", overFlow: "hidden"}) : this.setState({height:"0", overFlow: "hidden"}));
       }
    handleClickMenu(NavHeight) {
-        const newHeight = NavHeight === '0'? this.setState({height:"auto"}) : this.setState({height:"0"})
+        const newHeight = NavHeight === '0'? this.setState({height:"auto", overFlow:""}) : this.setState({height:"0", overflow:"hidden"})
         return newHeight;
       }
 
   render() {
-    const { currentUser, showModeratorBoard, showAdminBoard, height, transition } = this.state;
+    const { currentUser, showModeratorBoard, showAdminBoard, height, overFlow } = this.state;
 
     return (
       <>
@@ -121,18 +118,18 @@ class App extends Component {
                        See List Of Supporters
                   </Link>
               </div>
-              <div className="nav-toggle" onClick={() => {this.handleClickMenu(height); this.navTransition(height);}}>
+              <div className="nav-toggle" onClick={() => {this.handleClickMenu(height)}}>
                 < FaAlignJustify style={{color:"var(--mainOrange)"}}/>
               </div>
             </div>
-            <div className="links-container" style={{ height: height, transition: transition}}>
-              <div className="links">
+            <div className="links-container" style={{ height: height, overflow: overFlow}}>
+              <div className="links" >
               <Link to="/home" onClick={() => this.clearHeight(height)}>
                Home
               </Link>
               <div className="dropdown">
               <Link to="/">branches</Link>
-              <div className="dropdown-content" >
+              <div className="dropdown-content" style={{ height: height}}>
                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
                         bemenda
                       </Link>
@@ -161,8 +158,8 @@ class App extends Component {
               Projects
               </Link>
               <div className="dropdown">
-              <Link to="/">social groups</Link>
-              <div className="dropdown-content" >
+              <Link to="/" style={{zIndex:"-1"}}>social groups</Link>
+              <div className="dropdown-content" style={{ height: height}}>
                      <Link to="/social-groups/beyoin" className="dropdown-link" onClick={() => this.clearHeight(height)}>
                         Befang Youths Initiative
                       </Link>
@@ -226,13 +223,13 @@ class App extends Component {
           ) : (
             <div style={{display: "flex", justifyContent: "spaceBetween", width: "10%"}}>
                
-                <Link to={"/login"} className="nav-link">
+                <Link to={"/login"} className="nav-link" onClick={() => this.clearHeight(height)}>
                   Login
                 </Link>
                
 
                
-                <Link to={"/register"} className="ml-2">
+                <Link to={"/register"} className="ml-2" onClick={() => this.clearHeight(height)}>
                   SignUp
                 </Link>
                

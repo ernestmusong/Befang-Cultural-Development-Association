@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
 import contributions  from '../db.json';
+import CommingSoon from './CommingSoon';
 
 const ListOfContributors=() => {
     const [contributors, setContributors] = useState([])
@@ -12,7 +13,7 @@ const ListOfContributors=() => {
            setContributors(contributors)
           } , [])
            
-      if(contributors.length == 2) return <Title3 title="there are no contributions at the moment." />;
+      if(contributors.length == 2) return <CommingSoon title="there are no contributions at the moment." />;
   return (
     <div>
          <Title3 title="we thank you all for your contributions." />

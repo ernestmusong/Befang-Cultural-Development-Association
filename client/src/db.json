@@ -118,9 +118,9 @@
         {
     
     "id": 1,
-     "name": "icon name",
-    "img":"water.jpg",
-    "profession":"icon profession",
+     "name": "Mr Dang Akuh Dominic",
+    "img":"dominic-gce.jpg",
+    "profession":"Cameroon GCE Board Registrar",
     "work": "icon work"
   
         },
@@ -128,10 +128,10 @@
     
          
             "id": 2,
-            "name": "icon name",
-           "img":"water.jpg",
-           "profession":"icon profession",
-           "work": "icon work"
+            "name": "Mr Dang Akuh Dominic",
+            "img":"dominic-gce.jpg",
+            "profession":"Cameroon GCE Board Registrar",
+            "work": "icon work"
         
               }
        

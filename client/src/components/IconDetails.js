@@ -28,21 +28,21 @@ const IconDetails = (props) => {
          if(icon.img == "") return null;
 
     return ( 
-      <div className="container py-5">
+      <div className="container  icon-details">
        
       {/*info*/}
       <div className="row">
-        <div className="col-10 my-3 col-md-6">
-          <img src={require('../projectImages/'+ icon.img)} alt="project" className="img-fluid" />
+        <div className="col-10 my-3 col-md-6 mx-auto">
+          <img src={require('../iconsImages/'+ icon.img)} alt="project" className="img-fluid" />
         </div>
          
-        <div className="col-10 my-3   col-md-6  text-capitalize">
-          <h2 style={{color:"Var(--heroWhite)"}}>Name: {icon.name} </h2>
-          <h2 style={{color:"Var(--softWhite)"}}>Profession: {icon.profession} </h2>
+        <div className="col-10 my-3   col-md-6 mx-auto  text-capitalize">
+          <h4 style={{color:"Var(--heroWhite)", fontSize: "1.2rem"}}>Name: {icon.name} </h4>
+          <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Profession: {icon.profession} </h4>
           {/* <h4 className="title-text text-uppercase text-muted mt-3 mb-2">
             made by: <span className="text-uppercase"> {company} </span>
           </h4> */}
-            <p className="text-muted lead">{icon.work}</p>
+            <p style={{color: "#acaea9", fontSize:"12px"}}>{icon.work}</p>
           <div>
             <Link to="/">
               <button className='btns'>Go back</button>

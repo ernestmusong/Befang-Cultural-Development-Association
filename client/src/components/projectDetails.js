@@ -32,13 +32,13 @@ const ProjectDetails = (props) => {
          if(project.img == "") return null;
 
     return ( 
-      <div className="container py-5">
+      <div className="container   project-details">
       <div className="row">
-        <div className="col-10 my-3 col-md-6">
+        <div className="col-10 my-3 col-md-6 mx-auto">
           <img src={require('../projectImages/'+ project.img)} alt="project" className="img-fluid" />
         </div>
         {/*project text*/}
-        <div className="col-10 my-3   col-md-6  text-capitalize">
+        <div className="col-10 my-3 mx-auto  col-md-6  text-capitalize">
           <h2  style={{color:"Var(--heroWhite)"}}>{project.title} </h2>
           {/* <h4 className="title-text text-uppercase text-muted mt-3 mb-2">
             made by: <span className="text-uppercase"> {company} </span>

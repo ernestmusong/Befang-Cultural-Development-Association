@@ -149,7 +149,7 @@ export default class Register extends Component {
   render() {
     return (
       <div>
-        <div  >
+        <div className="signup-component">
            
           <Form
             onSubmit={this.handleRegister}
