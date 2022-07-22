@@ -42,7 +42,7 @@ const TreasurerDetails=(props) => {
                 </tr>
             </tbody>
       </table>	
-      <CallNow number="tel:+237676308067"/>
+      <CallNow number={`tel:${branch.treasurerNumber}` }/>
     </div>
   )
 }
