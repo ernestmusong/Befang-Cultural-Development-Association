@@ -13,7 +13,7 @@ const ListOfContributors=() => {
            setContributors(contributors)
           } , [])
            
-      if(contributors.length == 2) return <CommingSoon title="there are no contributions at the moment." />;
+      if(contributors.length == 2) return <CommingSoon title="there are no contributions at the moment." link="/all-projects" />;
   return (
     <div>
          <Title3 title="we thank you all for your contributions." />

@@ -13,7 +13,7 @@ const ListOfSupporters=() => {
            setSupporters(supporters)
           } , [])
           
-      if(supporters.length == 2) return <CommingSoon title="there are no supporters at the moment." />;
+      if(supporters.length == 2) return <CommingSoon title="there are no supporters at the moment." link= "/"/>;
   return (
     <div>
          <Title3 title="we thank you all for your enormous support for the continued development and maintenance of this website" />

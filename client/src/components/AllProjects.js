@@ -26,7 +26,7 @@ const Project=({id, title, desc,img}) => {
         <h1 className="heading">{title}</h1> 
         <p>{desc}</p>
         <div>      
-          <Link to={`/projects/${id}`}>read</Link>
+          <Link to={`/projects/${id}`}>Read more</Link>
         </div>
       </div>
         
