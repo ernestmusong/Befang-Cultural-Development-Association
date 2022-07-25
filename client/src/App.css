@@ -54,6 +54,11 @@ a[href^="tel:"]:before{
   content: "\260e";
   margin-right: 10px;
 }
+.callnow-container, .treasurer-links{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
 .top-nav {
   top: 0;
   display: flex;
@@ -67,6 +72,9 @@ a[href^="tel:"]:before{
   
 }
 .top-nav-support, .moble-support{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Clip";
    color: #fff; 
    text-transform: capitalize;
@@ -74,7 +82,7 @@ text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
       0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2,
       0 0 90px #00fff2;
 }
-.text1, .text2, .call-link {
+.text1, .text2, .call-link, .whatsapp-link {
 
   font-weight: bold;
   font-size: 2rem;
@@ -83,10 +91,6 @@ text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
   font-weight: bolder;
   font-family: "Clip";
   color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  
 }
 .text2{
   font-size: 1.5rem;
@@ -254,10 +258,7 @@ nav{
 }
   .container-in-banner .value {
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-      font-size: 1rem;
+    
   }
   .container-in-banner h6 {
    font-size: 1rem;
@@ -370,8 +371,8 @@ nav{
   text-transform: capitalize;
   font-size: 2.5rem;
   font-weight: bolder;
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
-    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  /* text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+    0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000; */
 }
 .beyoin-counter{
   display: flex;
@@ -381,9 +382,7 @@ nav{
 }
 .beyoin-counter .value {
   color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  
 }
 /* Buttons */
 .btns{
@@ -426,6 +425,12 @@ nav{
   margin: 2px;
   text-decoration: none;
 }
+.treasurer-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
 /* end contribute page */
 /*Footer*/
 .footer-bg {
@@ -437,21 +442,7 @@ nav{
 }
 
 /* end of footer */
-@keyframes glow {
-  from {
-    color: #fff;
-    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
-      0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2,
-      0 0 90px #00fff2;
-  }
-
-  to {
-    color: gray;
-    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2,
-      0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2,
-      0 1 90px #00fff2;
-  }
-}
+ 
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .top-nav {
@@ -504,11 +495,21 @@ margin-top: 117.16px;
    .text1{
      font-size: 1.5rem !important;
    }
+   .text2{
+    font-size: 1.0rem;
+   }
    .chief-container{
     width: 90%;
   }
   .contribute-page .contribute-page-child{
     width: 80%;
+  }
+  .treasurer-details{
+    height: calc(100vh - 117.16px);
+    margin-top: 117.16px;
+  }
+  .call-link, .whatsapp-link{
+    font-size: 0.75rem;
   }
   .signup-component, .login-component, .beyoin-member-profile, .icon-details, .project-details, .posts-container{
     margin-top:  117.16px !important;

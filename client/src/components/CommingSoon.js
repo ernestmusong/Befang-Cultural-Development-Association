@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link}  from "react-router-dom";
 
-function CommingSoon({title, link}) {
+function CommingSoon({title}) {
     if(title ===undefined ){
         title="comming soon"
     }
@@ -12,7 +12,7 @@ function CommingSoon({title, link}) {
                      <h1 className="text-align-center text-capitalize text-bold" style={{color:"Var(--heroWhite)"}}>
                         {title}
                      </h1>
-                     <Link to={link} className="text-white">
+                     <Link to='/' className="text-white">
                         Go Back
                    </Link>
                 </div>

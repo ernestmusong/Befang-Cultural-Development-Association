@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
+import {Link } from "react-router-dom";
 import { Branches } from '../Data';
 import CallNow from './CallNow';
+import WhatsAppNow from './WhatsAppNow';
 
 const TreasurerDetails=(props) => {
     const[branch, setBranch] = useState({
@@ -22,7 +24,7 @@ const TreasurerDetails=(props) => {
           , [branch, branchId])
       
   return (
-    <div className='' style={{height:"100vh", width:"100vw", display: "flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
+    <div className='treasurer-details'>
          <Title3 title="send your contribution to this person" />
      <table className="table table-bordered mx-auto">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
@@ -42,7 +44,18 @@ const TreasurerDetails=(props) => {
                 </tr>
             </tbody>
       </table>	
-      <CallNow number={`tel:+${branch.treasurerNumber}` }/>
+      <div className='col-md-8 col-lg-6 mx-auto callnow-container'>
+          <CallNow number={`tel:+${branch.treasurerNumber}` }/>
+          <WhatsAppNow number={`https://api.whatsapp.com/send?phone=${branch.treasurerNumber}` }/>
+     </div>
+     <div className='col-md-8 col-lg-6 mx-auto mt-2 treasurer-links'>
+          <Link to='/contributors' className="text-white">
+                See Contributions
+          </Link>
+          <Link to='/' className="text-white">
+                        Go Back
+           </Link>
+     </div>
     </div>
   )
 }

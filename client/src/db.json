@@ -163,19 +163,131 @@
     
     "id": 1,
      "name": "contributor name",
-    "amount":"100 cfa",
-    "branch": "branch",
+    "amount": 150,
+    "branch": "bamenda",
     "project": "name of project"
         },
         {
     
-         
             "id": 2,
             "name": "contributor name",
-            "amount":"100 cfa",
-            "branch": "branch",
+            "amount":100,
+            "branch": "bamenda",
             "project": "name of project"
-              }
+              },
+              {
+    
+                "id": 3,
+                "name": "contributor name",
+                "amount":100,
+                "branch": "buea",
+                "project": "name of project"
+                  },
+                  {
+    
+                    "id": 4,
+                    "name": "contributor name",
+                    "amount":200,
+                    "branch": "buea",
+                    "project": "name of project"
+                      },
+                      {
+    
+                        "id": 5,
+                        "name": "contributor name",
+                        "amount":123,
+                        "branch": "muea",
+                        "project": "name of project"
+                          },
+                          {
+    
+                            "id": 6,
+                            "name": "contributor name",
+                            "amount":143,
+                            "branch": "muea",
+                            "project": "name of project"
+                              },
+                              {
+    
+                                "id": 7,
+                                "name": "contributor name",
+                                "amount":123,
+                                "branch": "mutengene",
+                                "project": "name of project"
+                                  },
+                                  {
+    
+                                    "id": 8,
+                                    "name": "contributor name",
+                                    "amount":423,
+                                    "branch": "muea",
+                                    "project": "name of project"
+                                      },
+                                      {
+    
+                                        "id": 9,
+                                        "name": "contributor name",
+                                        "amount":123,
+                                        "branch": "limbe",
+                                        "project": "name of project"
+                                          },
+                                          {
+    
+                                            "id": 10,
+                                            "name": "contributor name",
+                                            "amount":123,
+                                            "branch": "limbe",
+                                            "project": "name of project"
+                                              },
+                                              {
+    
+                                                "id": 11,
+                                                "name": "contributor name",
+                                                "amount":123,
+                                                "branch": "douala",
+                                                "project": "name of project"
+                                                  },
+                                                  {
+    
+                                                    "id": 12,
+                                                    "name": "contributor name",
+                                                    "amount":163,
+                                                    "branch": "douala",
+                                                    "project": "name of project"
+                                                      },
+                                                      {
+    
+                                                        "id": 13,
+                                                        "name": "contributor name",
+                                                        "amount":153,
+                                                        "branch": "yaounde",
+                                                        "project": "name of project"
+                                                          },
+                                                          {
+    
+                                                            "id": 14,
+                                                            "name": "contributor name",
+                                                            "amount":193,
+                                                            "branch": "diaspora",
+                                                            "project": "name of project"
+                                                              },
+                                                              {
+    
+                                                                "id": 15,
+                                                                "name": "contributor name",
+                                                                "amount":723,
+                                                                "branch": "diaspora",
+                                                                "project": "name of project"
+                                                                  },
+                                                                  {
+    
+                                                                    "id": 16,
+                                                                    "name": "contributor name",
+                                                                    "amount":123,
+                                                                    "branch": "yaounde",
+                                                                    "project": "name of project"
+                                                                      }
+               
        
       ]
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import logo from "./becuda-logo.png";
-import {FaAlignJustify, FaMapMarkerAlt } from "react-icons/fa";
+import {FaAlignJustify, FaMapMarkerAlt, FaTimes } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import AllProjects from "./components/AllProjects";
@@ -25,6 +25,7 @@ import ContributeDetails from "./components/ContributeDetails";
 import BeyoinMember from "./components/BeyoinMember";
 import ListOfSupporters from "./components/ListOfWebSupporters";
 import ListOfContributors from "./components/ListOfContributors";
+import WebCreator from "./components/WebCreator";
  
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
       showAdminBoard: false,
       currentUser: undefined,
       height: 0,
+      linksHeight: 0,
       overFlow: "hidden",
        
     };
@@ -61,7 +63,9 @@ class App extends Component {
 
   componentWillUnmount() {
     EventBus.remove("logout");
+     
   }
+  
 
   logOut() {
     AuthService.logout();
@@ -72,14 +76,17 @@ class App extends Component {
     });
   }
    
-   clearHeight (NavHeight){
-    return (NavHeight === "auto" ? this.setState({height:"0", overFlow: "hidden"}) : this.setState({height:"0", overFlow: "hidden"}));
+   clearHeight (){
+    const height = this.state.height;
+    if(height !== 0){this.setState({height:0, overFlow: "hidden"})}
+  
       }
-   handleClickMenu(NavHeight) {
-        const newHeight = NavHeight === '0'? this.setState({height:"auto", overFlow:""}) : this.setState({height:"0", overflow:"hidden"})
-        return newHeight;
+   handleClickMenu() {
+    const height = this.state.height;
+    if(height === 0){this.setState({height:"auto", overFlow: ""})}
+    console.log(height)
+  
       }
-
   render() {
     const { currentUser, showModeratorBoard, showAdminBoard, height, overFlow } = this.state;
 
@@ -92,7 +99,9 @@ class App extends Component {
                 <img src= {logo} alt="logo" className="logo" style={{maxWidth: "100%"}} />
               </div> 
               <div className="top-nav-support">
-                  You can support this website at: +237 676308067<br />
+                  <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
+                      You can support this website here !
+                  </Link>
                   <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
                        See List Of Supporters
                   </Link>
@@ -113,66 +122,73 @@ class App extends Component {
                 {/* <h2 style={{textTransform:"capitalize", fontSize:"1rem", textIndent:'0.5rem'}}>green engineering and consultancy ltd.</h2> */}
               </div>
               <div className="moble-support">
-                  You can support this website at:<br /> +237 676308067<br />
+                  <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
+                      You can support this website here !
+                  </Link>
                   <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
                        See List Of Supporters
                   </Link>
               </div>
-              <div className="nav-toggle" onClick={() => {this.handleClickMenu(height)}}>
-                < FaAlignJustify style={{color:"var(--mainOrange)"}}/>
-              </div>
+              {this.state.height === 0 ? (
+                  <div className="nav-toggle" onClick={() => {this.handleClickMenu()}}>
+                  < FaAlignJustify style={{color:"var(--mainOrange)"}}/>
+                </div>
+              ) : ( <div className="nav-toggle" onClick={() => {this.clearHeight()}}>
+                     <FaTimes style={{color:"var(--mainOrange)"}}/>
+                 </div>)}
+              
             </div>
             <div className="links-container" style={{ height: height, overflow: overFlow}}>
-              <div className="links" >
-              <Link to="/home" onClick={() => this.clearHeight(height)}>
+              <div className="links"  >
+              <Link to="/home" onClick={() => this.clearHeight()}>
                Home
               </Link>
               <div className="dropdown">
               <Link to="/">branches</Link>
               <div className="dropdown-content" style={{ height: height}}>
-                     <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                     <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
                         bemenda
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
                          buea
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
                          muea
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
                          Mutengene
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
                          Limbe
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
                          Douala
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
                          Yaounde
                       </Link>
                   </div>
                   
               </div>
-              <Link to="/all-projects"  onClick={() => this.clearHeight(height)}>
+              <Link to="/all-projects"  onClick={() => this.clearHeight()}>
               Projects
               </Link>
               <div className="dropdown">
               <Link to="/" style={{zIndex:"-1"}}>social groups</Link>
               <div className="dropdown-content" style={{ height: height}}>
-                     <Link to="/social-groups/beyoin" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                     <Link to="/social-groups/beyoin" className="dropdown-link" onClick={() => this.clearHeight()}>
                         Befang Youths Initiative
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight(height)}>
+                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
                          Befang Youths Association
                       </Link>
                   </div>
                   
               </div>
-              <Link to="/comming-soon"  onClick={() => this.clearHeight(height)}>
+              <Link to="/comming-soon"  onClick={() => this.clearHeight()}>
                Constitution
               </Link>
-              <Link to="/comming-soon"  onClick={() => this.clearHeight(height)}>
+              <Link to="/comming-soon"  onClick={() => this.clearHeight()}>
                News
               </Link>
               {showModeratorBoard && (
@@ -215,7 +231,7 @@ class App extends Component {
                 </Link>
                
                
-                <a href="/"  onClick={this.logOut} className="ml-2">
+                <a href="/"  onClick={()=>{this.logOut(); this.clearHeight()}} className="ml-2">
                   LogOut
                 </a>
                
@@ -223,13 +239,13 @@ class App extends Component {
           ) : (
             <div style={{display: "flex", justifyContent: "spaceBetween", width: "10%"}}>
                
-                <Link to={"/login"} className="nav-link" onClick={() => this.clearHeight(height)}>
+                <Link to={"/login"} className="nav-link" onClick={() => this.clearHeight()}>
                   Login
                 </Link>
                
 
                
-                <Link to={"/register"} className="ml-2" onClick={() => this.clearHeight(height)}>
+                <Link to={"/register"} className="ml-2" onClick={() => this.clearHeight()}>
                   SignUp
                 </Link>
                
@@ -264,6 +280,7 @@ class App extends Component {
             <Route path="/branches/:branchId" component={ContributeDetails} />
             <Route path="/beyoin/:memberId" component={BeyoinMember} />
             <Route path="/web-supporters" component={ListOfSupporters} />
+            <Route path="/web-creator" component={WebCreator} />
             <Route path="/comming-soon" component={CommingSoon} />
              
           </Switch>

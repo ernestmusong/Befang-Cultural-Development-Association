@@ -41,7 +41,7 @@ export default class Home extends Component {
       <>
       <div className="banner mx-auto" style={{ backgroundImage: `url(${banner})` }}>
         <div className="text1-wrapper " style={{margin: "0 auto", marginBottom:"4rem", paddingTop:"4rem" }}>
-            <h1 className="text1" >select your branche</h1>
+            <h1 className="text1" >our branches</h1>
         </div>
         <div className="container-in-banner">
         {Branches.map(branch => (
