@@ -81,10 +81,11 @@ const ListOfContributors=() => {
            
       if(contributors.length == 3) return <CommingSoon title="there are no contributions at the moment." />;
   return (
-    <div>
+    <>
          <Title3 title="we thank you all for your contributions." />
          <Title3 title="total amount per branch." />
-     <table className="table table-bordered">
+         <div className='table-container all-branch-table'>
+         <table className="table table-bordered  ">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
                 <tr>
                   {Branches.map(branch => (
@@ -105,6 +106,7 @@ const ListOfContributors=() => {
                  </tr>
             </tbody>
       </table>	
+   </div>
       <Title3 title="All contributions." />
       <table className="table table-bordered">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
@@ -128,6 +130,8 @@ const ListOfContributors=() => {
                
             </tbody>
       </table>	
+         
+     
       <div className='col-md-8 col-lg-6 mx-auto mt-2 treasurer-links'>
           <Link to='/contribute-page' className="text-white">
                  Contribute now
@@ -136,7 +140,7 @@ const ListOfContributors=() => {
                         Go Back
            </Link>
      </div>
-    </div>
+    </>
   )
 }
 

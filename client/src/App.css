@@ -41,8 +41,10 @@ html {
 body {
   background: var(--lightBlue); 
   color: var(--clr-grey-1);
-  overflow-x: visible;
+  overflow: hidden;
   font-size: 0.875rem;
+  box-sizing: border-box;
+  
 }
 
 a {
@@ -110,8 +112,8 @@ nav{
 
 }
 .nav-center{
-  width: inherit;
   height: 100%;
+  width: inherit;  
 }
 
 .nav-header {
@@ -239,6 +241,9 @@ nav{
   }
 }
 /* end of nav */
+/* tables */
+
+/* end tables */
 /* hero */
  
 .banner {
@@ -258,7 +263,7 @@ nav{
 }
   .container-in-banner .value {
     color: #ffe6ff;
-    
+    font-size: 1rem;
   }
   .container-in-banner h6 {
    font-size: 1rem;
@@ -449,19 +454,32 @@ nav{
     display: none;
   }
   nav{
-    position: fixed;
+    position: fixed !important;
     background-color: var(--darkBlue);
+    width: 100vw;
   }
+   
   .info-wrapper{
     position: fixed;
     z-index: 999;
     top: 87.16px;
   }
- 
+  
   .links-container .links {
     padding-top: 1rem;
   }
   
+  .table-container{
+     position: relative; 
+     max-width: 100vw;  
+     overflow: visible; 
+     
+    
+  }
+  .all-branch-table{
+     width: 100vw;
+    left: calc(-50vw + 50%) !important;
+  }
   .info{
     color: var(--heroWhite);
     animation: info-bar-mobile 20s linear infinite;

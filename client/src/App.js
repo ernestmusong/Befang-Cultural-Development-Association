@@ -29,6 +29,7 @@ import WebCreator from "./components/WebCreator";
  
 
 class App extends Component {
+  
   constructor(props) {
     super(props);
     this.logOut = this.logOut.bind(this);
@@ -44,10 +45,9 @@ class App extends Component {
        
     };
   }
-
+  
   componentDidMount() {
     const user = AuthService.getCurrentUser();
-
     if (user) {
       this.setState({
         currentUser: user,
@@ -63,7 +63,6 @@ class App extends Component {
 
   componentWillUnmount() {
     EventBus.remove("logout");
-     
   }
   
 
@@ -78,18 +77,16 @@ class App extends Component {
    
    clearHeight (){
     const height = this.state.height;
-    if(height !== 0){this.setState({height:0, overFlow: "hidden"})}
-  
-      }
+    if(height !== 0){this.setState({height:0, overFlow: "hidden"} )}
+    }
+      
    handleClickMenu() {
     const height = this.state.height;
-    if(height === 0){this.setState({height:"auto", overFlow: ""})}
-    console.log(height)
-  
-      }
+    if(height === 0){this.setState({height:"auto", overFlow: ""}) }
+    
+  }
   render() {
     const { currentUser, showModeratorBoard, showAdminBoard, height, overFlow } = this.state;
-
     return (
       <>
  {/*top nav*/}
@@ -119,7 +116,7 @@ class App extends Component {
                  <div style={{width: "100px", height: "100%"}} className="logo-div">
                   <img src={logo} alt="logo" className="logo" style={{maxWidth: "100%"}}/>
                 </div> 
-                {/* <h2 style={{textTransform:"capitalize", fontSize:"1rem", textIndent:'0.5rem'}}>green engineering and consultancy ltd.</h2> */}
+                
               </div>
               <div className="moble-support">
                   <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
@@ -130,65 +127,65 @@ class App extends Component {
                   </Link>
               </div>
               {this.state.height === 0 ? (
-                  <div className="nav-toggle" onClick={() => {this.handleClickMenu()}}>
-                  < FaAlignJustify style={{color:"var(--mainOrange)"}}/>
+                  <div className="nav-toggle target" onClick={() => {this.handleClickMenu()}}>
+                  <FaAlignJustify className="target" style={{color:"var(--mainOrange)"}} />
                 </div>
-              ) : ( <div className="nav-toggle" onClick={() => {this.clearHeight()}}>
+              ) : ( <div className=" nav-toggle"  onClick={() => {this.clearHeight()}}>
                      <FaTimes style={{color:"var(--mainOrange)"}}/>
                  </div>)}
               
             </div>
-            <div className="links-container" style={{ height: height, overflow: overFlow}}>
-              <div className="links"  >
-              <Link to="/home" onClick={() => this.clearHeight()}>
+            <div id='links-container' className="links-container target" style={{ height: height, overflow: overFlow}}>
+              <div className="links target"  >
+              <Link to="/home" className='clear' onClick={() => {this.clearHeight()}}>
                Home
               </Link>
               <div className="dropdown">
               <Link to="/">branches</Link>
               <div className="dropdown-content" style={{ height: height}}>
-                     <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
+                     <Link to="/comming-soon" className="clear dropdown-link"  onClick={() => {this.clearHeight()}}>
                         bemenda
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
+                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                          buea
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
+                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                          muea
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
+                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                          Mutengene
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
+                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                          Limbe
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
+                      <Link to="/comming-soon" className="clear dropdown-link"> onClick={() => {this.clearHeight()}}
                          Douala
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
+                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                          Yaounde
                       </Link>
                   </div>
                   
               </div>
-              <Link to="/all-projects"  onClick={() => this.clearHeight()}>
+              <Link to="/all-projects" className='clear' onClick={() => {this.clearHeight()}} >
               Projects
               </Link>
               <div className="dropdown">
               <Link to="/" style={{zIndex:"-1"}}>social groups</Link>
               <div className="dropdown-content" style={{ height: height}}>
-                     <Link to="/social-groups/beyoin" className="dropdown-link" onClick={() => this.clearHeight()}>
+                     <Link to="/social-groups/beyoin" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                         Befang Youths Initiative
                       </Link>
-                      <Link to="/comming-soon" className="dropdown-link" onClick={() => this.clearHeight()}>
+                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                          Befang Youths Association
                       </Link>
                   </div>
                   
               </div>
-              <Link to="/comming-soon"  onClick={() => this.clearHeight()}>
+              <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}} >
                Constitution
               </Link>
-              <Link to="/comming-soon"  onClick={() => this.clearHeight()}>
+              <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}} >
                News
               </Link>
               {showModeratorBoard && (
@@ -231,7 +228,7 @@ class App extends Component {
                 </Link>
                
                
-                <a href="/"  onClick={()=>{this.logOut(); this.clearHeight()}} className="ml-2">
+                <a href="/"  onClick={()=>this.logOut()} className="clear ml-2" >
                   LogOut
                 </a>
                
@@ -239,13 +236,13 @@ class App extends Component {
           ) : (
             <div style={{display: "flex", justifyContent: "spaceBetween", width: "10%"}}>
                
-                <Link to={"/login"} className="nav-link" onClick={() => this.clearHeight()}>
+                <Link to={"/login"} className="clear nav-link" onClick={() => {this.clearHeight()}}>
                   Login
                 </Link>
                
 
                
-                <Link to={"/register"} className="ml-2" onClick={() => this.clearHeight()}>
+                <Link to={"/register"} className="clear ml-2">
                   SignUp
                 </Link>
                

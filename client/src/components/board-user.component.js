@@ -34,7 +34,7 @@ export default class BoardUser extends Component {
         <header className="jumbotron">
          
           <h3>
-           Hi <strong>{currentUser.title} {currentUser.firstName}</strong> you're Welcome !
+           Welcome <strong>{currentUser.title} {currentUser.firstName}</strong> you're a great son of befang !
           </h3>
           <p>
           Please help support the maintenance and continued development of this website by making a small contribution to<strong className="text-danger"> (+237) 676308067</strong><br/>
