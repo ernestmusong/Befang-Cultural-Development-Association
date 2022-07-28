@@ -10,6 +10,7 @@ const ProjectDetails = (props) => {
     
      const[project, setProject] = useState({
       id: 1,
+      url:"",
         img: "",
         title: "",
         amount:"",
@@ -65,7 +66,7 @@ const ProjectDetails = (props) => {
               <button className='btns'>back to projects</button>
             </Link>
             {project.status == "open" ?
-            <Link to= "/contribute-page">
+            <Link to= {project.url}>
               <button className='btns' style={{background:"transparent", color: "var(--mainYellow)"}}>
                  Contribute  
              </button>
