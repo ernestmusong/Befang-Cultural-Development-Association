@@ -308,8 +308,10 @@ nav{
 }
 .posts-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+
 }
 .post-container {
   background: #e2e8d5;
