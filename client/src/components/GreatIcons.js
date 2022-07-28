@@ -12,7 +12,7 @@ const GreatIcons =()=>{
   }, [members])
   return(
      
-      <div className='becuda-executive mx-auto'>
+      <div className='becuda-executive '>
       {members.map(member => (
         <Member key={member.id} {...member}/>
       ))}

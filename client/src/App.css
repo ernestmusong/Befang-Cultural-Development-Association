@@ -356,16 +356,22 @@ nav{
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
+  position: relative;
+  height: auto;
+   
 }
 .becuda-member{
   background: var(--darkBlue);
+  width: 350px;
    max-width: 350px;
    height: 450px;
-    margin: 0 auto;
+     
 }
 .becuda-image-wrapper{
   width: 100%;
   height: 80%;
+  margin: 0 auto;
+   
 }
 .becuda-image-wrapper img{
  width: 100%;
@@ -485,6 +491,9 @@ nav{
   .all-branch-table{
      width: 100vw;
     left: calc(-50vw + 50%) !important;
+  }
+  .becuda-member{
+    width: 90vw;
   }
   .info{
     color: var(--heroWhite);
