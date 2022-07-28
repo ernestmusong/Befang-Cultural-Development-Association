@@ -23,7 +23,7 @@ const Project=({id, title, desc,img}) => {
         <div className="post-container">
          
         <img className="image" src={require('../projectImages/'+img)} alt="project" />
-        <h1 className="heading">{title}</h1> 
+        <h1 className="heading text-capitalize">{title}</h1> 
         <p>{desc}</p>
         <div>      
           <Link to={`/projects/${id}`}>Read more</Link>
