@@ -91,10 +91,12 @@ class App extends Component {
       <>
  {/*top nav*/}
  <div className="top-nav">
-             
+             <Link to='/'>
                <div style={{width: "250px"}}>
-                <img src= {logo} alt="logo" className="logo" style={{maxWidth: "100%"}} />
+                  <img src= {logo} alt="logo" className="logo" style={{maxWidth: "100%"}} />
               </div> 
+             </Link>
+               
               <div className="top-nav-support">
                   <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
                       Support this website here !
@@ -113,10 +115,11 @@ class App extends Component {
           <div className="nav-center">
             <div className="nav-header">
               <div className='mobile-logo-container'>
+              <Link to='/'>
                  <div style={{width: "100px", height: "100%"}} className="logo-div">
                   <img src={logo} alt="logo" className="logo" style={{maxWidth: "100%"}}/>
                 </div> 
-                
+                </Link>
               </div>
               <div className="moble-support">
                   <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
