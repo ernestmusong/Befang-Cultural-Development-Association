@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
+import {Link } from "react-router-dom";
 import  webSupporters  from '../db.json';
 import CommingSoon from './CommingSoon';
 
@@ -36,7 +37,16 @@ const ListOfSupporters=() => {
                     ))}
                
             </tbody>
-      </table>	
+      </table>
+      <div className='col-md-8 col-lg-6 mx-auto mt-2 mb-3 treasurer-links'>
+          <Link to='/web-supporters' className="text-white">
+                Support Now !
+          </Link>
+          
+          <Link to='/' className="text-white">
+                        Go Back
+           </Link>
+     </div>	
     </div>
   )
 }

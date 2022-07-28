@@ -132,7 +132,7 @@ const ListOfContributors=() => {
       </table>	
          
      
-      <div className='col-md-8 col-lg-6 mx-auto mt-2 treasurer-links'>
+      <div className='col-md-8 col-lg-6 mx-auto mt-2 mb-3 treasurer-links'>
           <Link to='/contribute-page' className="text-white">
                  Contribute now
           </Link>

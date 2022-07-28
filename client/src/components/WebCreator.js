@@ -7,6 +7,7 @@ export default function WebCreator() {
   return (
     <div className='web-creator'>
          <Title3 title="thank you for your interest in supporting this website" />
+         <p style={{color:"Var(--softWhite)", textAlign:"center"}}>Please send your support to this person !</p>
      <table className="table table-bordered mx-auto">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
                 <tr>
@@ -50,10 +51,11 @@ export default function WebCreator() {
           <CallNow number={`tel:+237676308067` }/>
           <WhatsAppNow number={`https://api.whatsapp.com/send?phone=237676308067` }/>
      </div>
-     <div className='col-md-8 col-lg-6 mx-auto mt-2 treasurer-links'>
+     <div className='col-md-8 col-lg-6 mx-auto mt-2 mb-3 treasurer-links'>
           <Link to='/web-supporters' className="text-white">
                 See supporters
           </Link>
+          
           <Link to='/' className="text-white">
                         Go Back
            </Link>

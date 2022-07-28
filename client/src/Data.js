@@ -82,7 +82,7 @@ export  const Branches = [
         treasurerName:"treasurer name",
         treasurerNumber: 237676308067,
         treasurerTitle:"treasurer",
-        value:100,
+        value:65,
         text: "members",
         link: "/comming-soon",
         

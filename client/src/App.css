@@ -41,7 +41,7 @@ html {
 body {
   background: var(--lightBlue); 
   color: var(--clr-grey-1);
-  overflow: hidden;
+  overflow-x: hidden;
   font-size: 0.875rem;
   box-sizing: border-box;
   
@@ -470,9 +470,11 @@ nav{
   }
   
   .table-container{
-     position: relative; 
+     position: relative;
+     width: 100vw; 
      max-width: 100vw;  
-     overflow: visible; 
+     overflow-x: auto; 
+     margin: 0 auto ;
      
     
   }
@@ -490,6 +492,7 @@ nav{
   .banner{
 height: calc(100vh - 117.16px) !important;
 margin-top: 117.16px;
+max-width: 100vw;
    } 
    .page-hero{
     justify-content: space-around;
@@ -518,6 +521,9 @@ margin-top: 117.16px;
    }
    .chief-container{
     width: 90%;
+  }
+  .chief-wrapper{
+    height: 50vh;
   }
   .contribute-page .contribute-page-child{
     width: 80%;

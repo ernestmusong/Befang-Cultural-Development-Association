@@ -19,9 +19,9 @@
       {
   
   "id": 1,
-  "chiefName":"chief name",
+  "chiefName":"chief Edon michel",
   "chiefTitle":"Chief of befang",
-  "chiefImg":"water.jpg"
+  "chiefImg":"chief-img.jpeg"
    
       },
 
@@ -30,38 +30,91 @@
       {
   
   "id": 1,
-   "name": "President name",
-  "img":"water.jpg",
-  "title":"president"
+   "name": "kum johnson ofon",
+  "position":"president"
+   
 
       },
       {
   
        
   "id": 2,
-  "name": "secretary name",
- "img":"water.jpg",
- "title":"secretary"
+  "name": "aleh philip katche",
+ "position":"vice president"
+  
       
             },
-    {
-
-
-        "id": 3,
-        "name": "treasurer name",
-        "img":"water.jpg",
-        "title":"treasurer"
-            
-                    },
-        {
-
-
+            {
+              "id": 3,
+              "name": "dang afiah katche",
+              "position":"secretery general"
+            },
+      {
         "id": 4,
-        "name": "treasurer name",
-        "img":"water.jpg",
-        "title":"treasurer"
-            
-                    }
+        "name": "akeh peter intong",
+        "position":"vice secretery"
+      },
+      {
+        "id": 5,
+        "name": "munchang francis katche",
+        "position":"first publicity sec."
+      },
+      {
+        "id": 6,
+        "name": "okah benjamin",
+        "position":"second vice publicity sec."
+      },
+      {
+        "id": 7,
+        "name": "dang aleh joseph",
+        "position":"first social secretory."
+      },
+      {
+        "id": 8,
+        "name": "bezeng gladys",
+        "position":"second social secretory."
+      },
+      {
+        "id": 9,
+        "name": "bezeng thomas ongock",
+        "position":"fin. secretory."
+      },
+      {
+        "id": 10,
+        "name": "aleh joseph tem",
+        "position":"youth coordinator"
+      },
+      {
+        "id": 11,
+        "name": "anjah esther",
+        "position":"women coordinator"
+      },
+      {
+        "id": 12,
+        "name": "dang dominic",
+        "position":"adviser"
+      },
+      {
+        "id": 13,
+        "name": "dang elias aleh",
+        "position":"legal adviser"
+      },
+      {
+        "id": 14,
+        "name": "akeh george ketchem",
+        "position":"legal adviser"
+      },
+      {
+        "id": 15,
+        "name": "bezeng andrew",
+        "position":"treasurer"
+      },
+      {
+        "id": 16,
+        "name": "bezeng fidelis",
+        "position":"protocol"
+      }
+        
                 
   
     ],
@@ -121,7 +174,7 @@
      "name": "Mr Dang Akuh Dominic",
     "img":"dominic-gce.jpg",
     "profession":"Cameroon GCE Board Registrar",
-    "work": "icon work"
+    "work": "His works will be put here soon"
   
         },
         {
@@ -131,9 +184,19 @@
             "name": "Mr Kum Henry Ichu",
             "img":"kum-herny.jpg",
             "profession":"Head Of The DDRC Bamenda ",
-            "work": "icon work"
+            "work": "His works will be put here soon"
         
-              }
+              },
+              {
+    
+         
+                "id": 3,
+                "name": "Chief Kum Godlove Bezeng",
+                "img":"kum-godlove.jpg",
+                "profession":"Chief Executive Officer At Excellante International, Johannesburg, Gauteng",
+                "work": "He was responsilble for the complete roofing of the Presbyterian Church Of Befang."
+            
+                  }
        
       ],
       "webSupporters": [

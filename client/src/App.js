@@ -97,7 +97,7 @@ class App extends Component {
               </div> 
               <div className="top-nav-support">
                   <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
-                      You can support this website here !
+                      Support this website here !
                   </Link>
                   <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
                        See List Of Supporters
@@ -120,7 +120,7 @@ class App extends Component {
               </div>
               <div className="moble-support">
                   <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
-                      You can support this website here !
+                      Support this website here !
                   </Link>
                   <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
                        See List Of Supporters
@@ -171,7 +171,7 @@ class App extends Component {
               Projects
               </Link>
               <div className="dropdown">
-              <Link to="/" style={{zIndex:"-1"}}>social groups</Link>
+              <Link to="/" style={{zIndex:"-1"}}>sub groups</Link>
               <div className="dropdown-content" style={{ height: height}}>
                      <Link to="/social-groups/beyoin" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                         Befang Youths Initiative
@@ -242,7 +242,7 @@ class App extends Component {
                
 
                
-                <Link to={"/register"} className="clear ml-2">
+                <Link to={"/register"} className="clear ml-2" onClick={() => {this.clearHeight()}}>
                   SignUp
                 </Link>
                
@@ -254,8 +254,8 @@ class App extends Component {
             </div>
         </nav>
             <div className='info-wrapper'>
-              <p className='info'>
-              Please do not SignUp on this website if you're not a Son/Daughter of Befang!
+              <p className='info text-uppercase'>
+             Welcome to the befang cultural and development association...<span className="text-uppercase">becuda</span>
               </p>
             </div>
 
