@@ -25,7 +25,7 @@ chiefImg:"",
                                    
                                   <div className="chief-container">
                                       <div className='chief-wrapper'>
-                                       <img src={require('../projectImages/'+chiefProfile.chiefImg)} alt="project" />
+                                       <img src={require('../chiefs/'+chiefProfile.chiefImg)} alt="chief" />
                                       </div> 
                                      
                                       <div className='py-2 ml-2'>

@@ -32,7 +32,7 @@ const Member=({profession, name, img, id}) => {
       <div className='py-2 pl-2' style={{width:"100%", color:"Var(--mainOrange)", backgroundColor: "Var(--darkBlue)", fontWeight:"bolder"}}>
       <h4 className="text-uppercase" style={{ color:"Var(--mainOrange)"}}>{name}</h4>      
       <p className='text-capitalize' style={{ color:"Var(--mainOrange)"}}>{profession}</p>
-      <Link to={`/icons/${id}`} style={{color:"Var(--heroWhite)"}}>See his works</Link> 
+      <Link to={`/icons/${id}`} style={{color:"Var(--heroWhite)"}}>Read More</Link> 
       </div>
    </div>
     )
