@@ -63,7 +63,7 @@ const BefangYouthsInitiative=()=>{
 
 const Member=({id, name, img}) => {
     return (
-<div className=" beyoin-single-member col-sm-6 col-md-6 col-lg-3 py-4" style={{display:"flex",  alignItems:"center"}}>
+<div className=" beyoin-single-member col-xs-6 col-sm-6 col-md-3 col-lg-3 py-4" style={{display:"flex",  alignItems:"center"}}>
             <div style={{width:"50px", height:"50px"}}>
               <img src={require('../beyoinImages/'+img)} alt="person" style={{maxWidth:"100%", borderRadius:"50%"}}/>
             </div>
