@@ -82,9 +82,31 @@ export  const Branches = [
         treasurerName:"treasurer name",
         treasurerNumber: 237676308067,
         treasurerTitle:"treasurer",
+        value:67,
+        text: "members",
+        link: "/comming-soon",
+        
+    },
+    {
+        id: 9,
+        name: "BEYUCUDA",
+        treasurerName:"treasurer name",
+        treasurerNumber: 237676308067,
+        treasurerTitle:"treasurer",
         value:65,
         text: "members",
         link: "/comming-soon",
+        
+    },
+    {
+        id: 10,
+        name: "BEYOIN",
+        treasurerName:"treasurer name",
+        treasurerNumber: 237676308067,
+        treasurerTitle:"treasurer",
+        value:127,
+        text: "members",
+        link: "/social-groups/beyoin",
         
     }
 ]
