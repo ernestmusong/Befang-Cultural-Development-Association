@@ -47,7 +47,7 @@ export default class Home extends Component {
         {Branches.map(branch => (
         <Link to={branch.link} style={{ textDecoration: "none" }} key={branch.id}>
                <div className="text-center count-up-wrapper" >
-                <div>
+                <div className="counter-wrapper">
                 <h6 className=" text-capitalize" style={{color: "var(--mainOrange)"}}>{branch.name}</h6>
                <h1 className="value"><CountUp
           start={0}

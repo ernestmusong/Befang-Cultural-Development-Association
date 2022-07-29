@@ -390,7 +390,7 @@ nav{
 /* end of becuda executive */
 /* befand youths association */
 .motto {
-  color: #fff6a9;
+  color:var(--heroWhite);
   font-family: "Sacramento", cursive;
   text-transform: capitalize;
   font-size: 2.5rem;
@@ -502,6 +502,15 @@ nav{
   }
   .becuda-member{
     width: 90vw;
+    margin: 0 auto;
+  }
+  .beyoin-all-members-wrapper{
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  .beyoin-single-member{
+    width: auto !important;
   }
   .info{
     color: var(--heroWhite);

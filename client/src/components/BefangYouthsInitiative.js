@@ -52,7 +52,7 @@ const BefangYouthsInitiative=()=>{
        
      
       <Title title="all our members" />
-      <div className='becuda-member'>
+      <div className='row beyoin-all-members-wrapper'>
       {members.map(member => (
         <Member key={member.id} {...member}/>
       ))}
@@ -63,11 +63,11 @@ const BefangYouthsInitiative=()=>{
 
 const Member=({id, name, img}) => {
     return (
-<div className="col-sm-6 col-lg-3 py-4" style={{display:"flex", justifyContent:"spaceBetween", alignItems:"center"}}>
+<div className=" beyoin-single-member col-sm-6 col-md-6 col-lg-3 py-4" style={{display:"flex",  alignItems:"center"}}>
             <div style={{width:"50px", height:"50px"}}>
               <img src={require('../beyoinImages/'+img)} alt="person" style={{maxWidth:"100%", borderRadius:"50%"}}/>
             </div>
-               <div className="px-4">
+               <div className="px-2">
                <h6 style={{ color:"Var(--mainOrange)"}}>{name}</h6>
                  <Link to={`/beyoin/${id}`} style={{color:"Var(--heroWhite)"}}>See Profile</Link>
                </div>
