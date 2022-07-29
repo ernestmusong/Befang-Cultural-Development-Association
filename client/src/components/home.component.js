@@ -41,12 +41,12 @@ export default class Home extends Component {
       <>
       <div className="banner mx-auto" style={{ backgroundImage: `url(${banner})` }}>
         <div className="text1-wrapper " style={{margin: "0 auto", marginBottom:"4rem", paddingTop:"4rem" }}>
-            <h1 className="text1" >our branches</h1>
+            <h1 className="text1" >welcome to becuda</h1>
         </div>
         <div className="container-in-banner">
         {Branches.map(branch => (
         <Link to={branch.link} style={{ textDecoration: "none" }} key={branch.id}>
-               <div className="text-center" style={{ backgroundColor: "var(--darkBlue)", borderRadius: "35px", height:"100px", width: "100px" , padding:"10px", display:"grid", placeItems:"center"}}>
+               <div className="text-center count-up-wrapper" >
                 <div>
                 <h6 className=" text-capitalize" style={{color: "var(--mainOrange)"}}>{branch.name}</h6>
                <h1 className="value"><CountUp
@@ -54,7 +54,7 @@ export default class Home extends Component {
           end={branch.value}
           duration={3}
         />    </h1>
-               <h6 className=" text-capitalize"  style={{color: "var(--mainOrange)"}}>{branch.text}</h6>
+               <h6 className=" text-capitalize"  style={{color: "var(--mainOrange)" }}>{branch.text}</h6>
                 </div>
            </div>
          </Link>

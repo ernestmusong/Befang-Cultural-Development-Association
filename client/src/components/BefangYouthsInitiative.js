@@ -39,12 +39,12 @@ const BefangYouthsInitiative=()=>{
                     </div>
               </div>
           </div>
-          <h6 className='motto'>motto: together we stand, divided we fall</h6>
+          <h6 className='motto'>motto : together we stand, divided we fall</h6>
       </div>
       <WhoWeAre />
       <Title title="executive members of the Group" />
        
-            <div className='row becuda-executive mx-auto' style={{margin:"0 auto", width:"100vw"}}>
+            <div className='row becuda-executive'>
             {executiveMembers.map(member => (
                 <ExMember key={member.id} {...member}/>
             ))}
@@ -52,7 +52,7 @@ const BefangYouthsInitiative=()=>{
        
      
       <Title title="all our members" />
-      <div className='row'>
+      <div className='becuda-member'>
       {members.map(member => (
         <Member key={member.id} {...member}/>
       ))}
