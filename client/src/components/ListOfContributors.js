@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
 import contributions  from '../db.json';
-import { Branches } from '../Data';
+import allProjects from '../db.json'
 import {Link } from "react-router-dom";
 import CommingSoon from './CommingSoon';
 
 const ListOfContributors=() => {
+    const [project, setProject] = useState([])
     const [contributors, setContributors] = useState([])
     const [bamenda, setBamenda] = useState([])
     const [douala, setDouala] = useState([])
@@ -18,6 +19,9 @@ const ListOfContributors=() => {
          
     
        useEffect(() =>{
+        let projects = allProjects.projects;
+        let projectName = projects.map(project => project.title)
+        setProject(projectName)
         let bamenda = contributions.contributors.filter(contributor => contributor.branch === "bamenda");
         let bAmts = bamenda.map(person => person.amount)
         let bamendaTotal = bAmts.reduce((sum, item) => {
@@ -88,13 +92,20 @@ const ListOfContributors=() => {
          <table className="table table-bordered  ">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
                 <tr>
-                  {Branches.map(branch => (
-                    <th scope="col">{branch.name}</th>
-                  ))}  
+                    <th className='text-uppercase' scope="col"> Project name</th>
+                    <th className='text-uppercase' scope="col"> bamenda</th>
+                    <th className='text-uppercase' scope="col"> buea</th>
+                    <th className='text-uppercase' scope="col"> muea</th>
+                    <th className='text-uppercase' scope="col"> mutengene</th>
+                    <th className='text-uppercase' scope="col"> limbe</th>
+                    <th className='text-uppercase' scope="col"> douala</th>
+                    <th className='text-uppercase' scope="col"> yaounde</th>
+                    <th className='text-uppercase' scope="col"> diaspora</th>
                 </tr>
 			</thead>
             <tbody>
                      <tr className="bg-light">
+                     <td className='text-capitalize'>Water distribution</td>
                      <td>{bamenda} cfa</td>
                      <td>{buea} cfa</td>
                      <td>{muea} cfa</td>
@@ -104,6 +115,7 @@ const ListOfContributors=() => {
                      <td>{yaounde} cfa</td>
                      <td>{diaspora} cfa</td>
                  </tr>
+                  
             </tbody>
       </table>	
    </div>
@@ -120,6 +132,7 @@ const ListOfContributors=() => {
             <tbody>
             {contributors.map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
+              
                      <td>{contributor.name}</td>
                      <td>{contributor.project}</td>
                      <td>{contributor.amount}</td>
