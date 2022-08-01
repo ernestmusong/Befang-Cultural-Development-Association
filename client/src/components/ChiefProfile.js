@@ -25,8 +25,8 @@ position:"",
       <div className="container"  >
             <div className='row'>
                            {chiefProfile.map(chief =>(
-                                  <div className="col-md-6 chief-container mx-auto">
-                                    <h5 className="text-uppercase text-center" style={{ color:"Var(--heroWhite)"}}>{chief.position}</h5> 
+                                  <div className="col-md-6 chief-container mx-auto my-2">
+                                    <h5 className="text-uppercase text-center my-2" style={{ color:"Var(--heroWhite)"}}>{chief.position}</h5> 
                                       <div className='chief-wrapper'>
                                        <img src={require('../chiefs/'+chief.chiefImg)} alt="chief" />
                                       </div> 
