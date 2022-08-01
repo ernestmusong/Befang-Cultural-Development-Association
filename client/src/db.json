@@ -26,16 +26,25 @@
       
   ],
 
-  "befangChief": 
+  "befangChief": [
     
       {
   
   "id": 1,
   "chiefName":"chief Edon michel",
   "chiefTitle":"Chief of befang",
-  "chiefImg":"chief-img.jpeg"
-   
+  "chiefImg":"chief-img.jpeg",
+  "position":"our supreme ruler"
       },
+      {
+  
+        "id": 2,
+        "chiefName":"Chief Kum Godlove Bezeng",
+        "chiefTitle":"Chief Of Ukuo-owong",
+        "chiefImg":"kum-godlove.jpg",
+        "position":"Native Chief of Ukuo-owong"
+            }
+    ] ,
 
       "becudaExecutive": [
     
@@ -198,18 +207,7 @@
             "profession":"Head Of The DDRC Bamenda ",
             "work": "His works will be put here soon"
         
-              },
-              {
-    
-         
-                "id": 3,
-                "name": "Chief Kum Godlove Bezeng",
-                "img":"kum-godlove.jpg",
-                "profession":"Chief Of Ukuoo-wong",
-                "work": "He was responsilble for the complete roofing of the Presbyterian Church Of Befang."
-            
-                  }
-       
+              }
       ],
       "webSupporters": [
     

@@ -524,7 +524,7 @@ nav{
     color: var(--heroWhite);
     animation: info-bar-mobile 20s linear infinite;
   }
-  .title3-1{
+  .title3{
     margin-top:   117.16px !important;
   }
   .banner{
@@ -684,14 +684,13 @@ h4 {
   line-height: 1;
 }
    
-  .chief-container{
-    width: 50%;
+   .chief-container{
     height: 500px;
     margin-bottom: 5rem;
   }
   .chief-wrapper{
     height: 80%;
- }
+ } 
 }
 /*End Media Queries */
 label {

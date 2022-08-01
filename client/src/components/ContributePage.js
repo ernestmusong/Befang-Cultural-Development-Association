@@ -5,7 +5,7 @@ import { Branches } from '../Data';
 function ContributePage() {
   return (
     <>
-         <Title3 title="select branch" />
+         <Title3 title="select your branch" />
          <div className='contribute-page'>
              {Branches.map(branch => (
                 <Link to={`/branches/${branch.id}`} key={branch.id}  className='contribute-page-child bg-light'>

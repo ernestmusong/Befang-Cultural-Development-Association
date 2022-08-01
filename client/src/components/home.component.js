@@ -61,7 +61,8 @@ export default class Home extends Component {
           ))}
         </div>
       </div>
-      <Title title="Our supreme ruler" />
+       
+      <Title title="make befang great again" />
       <Chief />
       <Title title="becuda executive members" />
       <BecudaExe />
