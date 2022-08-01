@@ -103,7 +103,7 @@ const WhoWeAre=() => {
                is a group of members belonging to the Befang village only that primarily operates on WhatsApp created by <span className='text-uppercase' style={{ color:"Var(--lightGreen)"}}> Esoh derick </span> 
                who is currently the President of the group. It was based on the idea of <span className='text-capitalize' style={{ color:"Var(--lightRed)"}}>"Together we stand, divided we fall" </span> 
                that inspired him to create this group. It is a purely democratic group where members freedom of speech is a value. The group currently has over 127 members.
-               Membership is currently free. Just contact  <span className='text-capitalize' style={{ color:"Var(--lightRed)"}}>+237 680401122</span> to join.
+               Membership is currently free to all sons and daughters of Befang. <a href='https://chat.whatsapp.com/GX7k6SspcHrIvXdh2fUm6V' target='blank' className='text-capitalize' style={{ color:"Var(--lightRed)"}}>Join Now</a>.
             </p>
            </div>
            <div className='col-sm-9 col-md-8 col-lg-6 mx-auto text-center' >

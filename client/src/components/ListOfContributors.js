@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
+import Title4 from './Title4';
 import contributions  from '../db.json';
+import {Branches} from '../Data';
 import allProjects from '../db.json'
-import {Link } from "react-router-dom";
+import ContributeNowLink from './ContributeNowLink';
 import CommingSoon from './CommingSoon';
 
 const ListOfContributors=() => {
@@ -86,26 +88,21 @@ const ListOfContributors=() => {
       if(contributors.length == 3) return <CommingSoon title="there are no contributions at the moment." />;
   return (
     <>
-         <Title3 title="we thank you all for your contributions." />
-         <Title3 title="total amount per branch." />
+         <Title3 title=" thank you all for your contributions." />
+         <Title4 title="total amount per branch." />
          <div className='table-container all-branch-table'>
+         <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution project</div>
          <table className="table table-bordered  ">
-			<thead style={{backgroundColor:"#DCDCDC"}}>
-                <tr>
-                    <th className='text-uppercase' scope="col"> Project name</th>
-                    <th className='text-uppercase' scope="col"> bamenda</th>
-                    <th className='text-uppercase' scope="col"> buea</th>
-                    <th className='text-uppercase' scope="col"> muea</th>
-                    <th className='text-uppercase' scope="col"> mutengene</th>
-                    <th className='text-uppercase' scope="col"> limbe</th>
-                    <th className='text-uppercase' scope="col"> douala</th>
-                    <th className='text-uppercase' scope="col"> yaounde</th>
-                    <th className='text-uppercase' scope="col"> diaspora</th>
+			<thead>
+                
+                <tr style={{backgroundColor:"#DCDCDC"}}>
+                  {Branches.map(branch => (
+                     <th className=' text-uppercase' scope="col">{branch.name}</th>
+                  ))}
                 </tr>
 			</thead>
             <tbody>
                      <tr className="bg-light">
-                     <td className='text-capitalize'>Water distribution</td>
                      <td>{bamenda} cfa</td>
                      <td>{buea} cfa</td>
                      <td>{muea} cfa</td>
@@ -114,45 +111,192 @@ const ListOfContributors=() => {
                      <td>{douala} cfa</td>
                      <td>{yaounde} cfa</td>
                      <td>{diaspora} cfa</td>
+                     <td>--</td>
+                     <td>--</td>
                  </tr>
                   
             </tbody>
       </table>	
    </div>
-      <Title3 title="All contributions." />
+      <Title4 title="List of all contributions." />
+      <div className='list-of-all-contributions'>
+        <div className='col-md-6 col-lg-4  mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...buea branch</div>
       <table className="table table-bordered">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
                 <tr>
                     <th scope="col">Name</th>
-                    <th scope="col">Project</th>
                     <th scope="col">Amount</th>
-                    <th scope="col">Branch</th>
                 </tr>
 			</thead>
             <tbody>
-            {contributors.map(contributor =>(
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="buea")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-              
                      <td>{contributor.name}</td>
-                     <td>{contributor.project}</td>
-                     <td>{contributor.amount}</td>
-                     <td>{contributor.branch}</td>
-                      
+                     <td>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
                
             </tbody>
-      </table>	
-         
-     
-      <div className='col-md-8 col-lg-6 mx-auto mt-2 mb-3 treasurer-links'>
-          <Link to='/contribute-page' className="text-white">
-                 Contribute now
-          </Link>
-          <Link to='/' className="text-white">
-                        Go Back
-           </Link>
-     </div>
+      </table>
+      <ContributeNowLink />	
+      </div>
+      {/* bamenda branch */}
+      <div className='col-md-6 col-lg-4 mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...bamenda branch</div>
+      <table className="table table-bordered">
+			<thead style={{backgroundColor:"#DCDCDC"}}>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+			</thead>
+            <tbody>
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="bamenda")}).map(contributor =>(
+                     <tr className="bg-light" key={contributor.id}>
+                     <td>{contributor.name}</td>
+                     <td>{contributor.amount} cfa</td> 
+                 </tr>
+                    ))}
+            </tbody>
+      </table>
+      <ContributeNowLink />	
+      </div>
+      {/* muea branch */}
+      <div className='col-md-6 col-lg-4  mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...muea branch</div>
+      <table className="table table-bordered">
+			<thead style={{backgroundColor:"#DCDCDC"}}>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+			</thead>
+            <tbody>
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="muea")}).map(contributor =>(
+                     <tr className="bg-light" key={contributor.id}>
+                     <td>{contributor.name}</td>
+                     <td>{contributor.amount} cfa</td> 
+                 </tr>
+                    ))}
+            </tbody>
+      </table>
+      <ContributeNowLink />		
+      </div>
+       {/* mutengene branch */}
+       <div className='col-md-6 col-lg-4 mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...mutengene branch</div>
+      <table className="table table-bordered">
+			<thead style={{backgroundColor:"#DCDCDC"}}>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+			</thead>
+            <tbody>
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="mutengene")}).map(contributor =>(
+                     <tr className="bg-light" key={contributor.id}>
+                     <td>{contributor.name}</td>
+                     <td>{contributor.amount} cfa</td> 
+                 </tr>
+                    ))}
+            </tbody>
+      </table>
+      <ContributeNowLink />		
+      </div>
+      {/* limbe branch */}
+      <div className='col-md-6 col-lg-4 mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...limbe branch</div>
+      <table className="table table-bordered">
+			<thead style={{backgroundColor:"#DCDCDC"}}>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+			</thead>
+            <tbody>
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="limbe")}).map(contributor =>(
+                     <tr className="bg-light" key={contributor.id}>
+                     <td>{contributor.name}</td>
+                     <td>{contributor.amount} cfa</td> 
+                 </tr>
+                    ))}
+            </tbody>
+      </table>
+      <ContributeNowLink />		
+      </div>
+      {/* yaounde branch */}
+      <div className='col-md-6 col-lg-4 mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...yaounde branch</div>
+      <table className="table table-bordered">
+			<thead style={{backgroundColor:"#DCDCDC"}}>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+			</thead>
+            <tbody>
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="yaounde")}).map(contributor =>(
+                     <tr className="bg-light" key={contributor.id}>
+                     <td>{contributor.name}</td>
+                     <td>{contributor.amount} cfa</td> 
+                 </tr>
+                    ))}
+            </tbody>
+      </table>
+      <ContributeNowLink />	
+      </div>
+      {/* douala branch */}
+      <div className='col-md-6 col-lg-4 mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...douala branch</div>
+      <table className="table table-bordered">
+			<thead style={{backgroundColor:"#DCDCDC"}}>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+			</thead>
+            <tbody>
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="douala")}).map(contributor =>(
+                     <tr className="bg-light" key={contributor.id}>
+                     <td>{contributor.name}</td>
+                     <td>{contributor.amount} cfa</td> 
+                 </tr>
+                    ))}
+            </tbody>
+      </table>
+      <ContributeNowLink />	
+      </div>
+      {/* diaspora branch */}
+      <div className='col-md-6 col-lg-4 mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...diaspora branch</div>
+      <table className="table table-bordered">
+			<thead style={{backgroundColor:"#DCDCDC"}}>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+			</thead>
+            <tbody>
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="diaspora")}).map(contributor =>(
+                     <tr className="bg-light" key={contributor.id}>
+                     <td>{contributor.name}</td>
+                     <td>{contributor.amount} cfa</td> 
+                 </tr>
+                    ))}
+            </tbody>
+      </table>
+      <ContributeNowLink />		
+      </div>
+        </div>
     </>
   )
 }

@@ -101,6 +101,9 @@ text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
 .title3{
   margin: 0 auto;
 }
+.title4{
+  margin-top: 3rem;
+ }
 
 /* navbar */
 nav{
@@ -242,6 +245,11 @@ nav{
 }
 /* end of nav */
 /* tables */
+ .list-of-all-contributions{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+} 
 
 /* end tables */
 /* hero */
@@ -516,7 +524,7 @@ nav{
     color: var(--heroWhite);
     animation: info-bar-mobile 20s linear infinite;
   }
-  .title3{
+  .title3-1{
     margin-top:   117.16px !important;
   }
   .banner{
@@ -656,13 +664,16 @@ max-width: 100vw;
   top: 132px;
    
 }
+.all-branch-table{
+  margin-bottom: 3rem;
+}
  .banner{
   min-height: calc(100vh - 277.9px);
  } 
 #text1{
   font-size: 2rem !important;
 }
-  
+ 
 body {
   font-size: 1rem;
 }

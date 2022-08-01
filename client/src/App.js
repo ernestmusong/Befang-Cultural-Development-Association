@@ -140,7 +140,7 @@ class App extends Component {
             </div>
             <div id='links-container' className="links-container target" style={{ height: height, overflow: overFlow}}>
               <div className="links target"  >
-              <Link to="/home" className='clear' onClick={() => {this.clearHeight()}}>
+              <Link to="/" className='clear' onClick={() => {this.clearHeight()}}>
                Home
               </Link>
               <div className="dropdown">
@@ -161,7 +161,7 @@ class App extends Component {
                       <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                          Limbe
                       </Link>
-                      <Link to="/comming-soon" className="clear dropdown-link"> onClick={() => {this.clearHeight()}}
+                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                          Douala
                       </Link>
                       <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
@@ -246,7 +246,7 @@ class App extends Component {
 
                
                 <Link to={"/register"} className="clear ml-2" onClick={() => {this.clearHeight()}}>
-                  SignUp
+                  Register
                 </Link>
                
             </div>
@@ -264,7 +264,7 @@ class App extends Component {
 
         <>
           <Switch>
-            <Route exact path={["/", "/home"]} component={Home} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile" component={Profile} />

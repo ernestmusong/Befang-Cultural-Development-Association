@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Title3({title}) {
+function Title4({title}) {
   return (
-    <div className='title3 title3-1'>
+    <div className='title4'>
     <h1 className="text2" >{title}</h1>
 </div>
   )
 }
 
-export default Title3
+export default Title4
