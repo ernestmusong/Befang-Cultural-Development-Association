@@ -22,7 +22,7 @@ const GreatIcons =()=>{
 }
 const Member=({profession, name, img, id}) => {
     return (
-      <div className=' becuda-member bg-danger'>
+      <div className=' becuda-member'>
       <div className='becuda-image-wrapper'>
        <img src={require('../iconsImages/'+img)} alt="project" />
       </div> 
