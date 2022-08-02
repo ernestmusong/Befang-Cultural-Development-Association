@@ -11,20 +11,18 @@ const GreatIcons =()=>{
     setMembers(members)
   }, [members])
   return(
-     
-      <div className='becuda-executive '>
-      {members.map(member => (
-        <Member key={member.id} {...member}/>
-      ))}
+     <div className='container mb-4'>
+        <div className=' great-icons'>
+            {members.map(member => (
+              <Member key={member.id} {...member}/>
+            ))}
       </div>
-    
-      
- 
+     </div>
   )
 }
 const Member=({profession, name, img, id}) => {
     return (
-      <div className='becuda-member'>
+      <div className=' becuda-member bg-danger'>
       <div className='becuda-image-wrapper'>
        <img src={require('../iconsImages/'+img)} alt="project" />
       </div> 
