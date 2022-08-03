@@ -237,15 +237,15 @@ class App extends Component {
                
             </div>
           ) : (
-            <div style={{display: "flex", justifyContent: "spaceBetween", width: "10%"}}>
-               
-                <Link to={"/login"} className="clear nav-link" onClick={() => {this.clearHeight()}}>
+            <div className="register-link">
+              
+                <Link to={"/login"} className="clear nav-link" onClick={() => {this.clearHeight()}} >
                   Login
                 </Link>
                
 
                
-                <Link to={"/register"} className="clear ml-2" onClick={() => {this.clearHeight()}}>
+                <Link to={"/register"} className="clear nav-link" onClick={() => {this.clearHeight()}}>
                   Register
                 </Link>
                

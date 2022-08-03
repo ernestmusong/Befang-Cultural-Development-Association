@@ -140,7 +140,6 @@ nav{
 }
 
 .links-container {
-  /* overflow: hidden; */
   transition: var(--transition);
   background: var(--lightBlue);
   width: inherit;
@@ -151,19 +150,17 @@ nav{
 }
 
 .links a {
-  /* background: var(--clr-white); */
-  /* color: var(--clr-black); */
    font-size: 1rem; 
   text-transform: uppercase;
   letter-spacing: 0;
   display: block;
   transition: var(--transition);
   font-weight: bold;
+  color: var(--heroWhite);
   padding: 0.75rem 0;
   text-decoration: none;
 }
 .dropdown {
-  /* position: relative; */
   display: inline-block;
   overflow: visible !important;
   
@@ -175,7 +172,6 @@ nav{
   margin-top: 2.33rem;
   width: auto;
   min-width: 200px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 999 !important;
 }
 .dropdown-content .dropdown-link {
@@ -197,6 +193,13 @@ nav{
 }
 .dropdown:hover .dropdown-link {
   background-color: var(--clr-grey);
+}
+
+.register-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .info-wrapper{
@@ -256,8 +259,8 @@ nav{
  
 .banner {
      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      background-size: cover; 
+      background-position: center; 
       width: 100vw;
 }
  
@@ -290,7 +293,8 @@ nav{
   border-radius: 35px;
   display: grid;
   place-items: center;
-  background-color: var(--darkBlue);
+  background-color: transparent;
+  border: 2px solid var(--mainOrange);
  }
 
 /* end hero */
@@ -465,6 +469,8 @@ nav{
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  width: 100%;
+  max-width: 100vw;
    
 }
 
@@ -491,15 +497,14 @@ nav{
     padding-top: 1rem;
   }
   
-  .table-container{
+  .table-container, .web-creator-table{
      position: relative;
      width: 100vw; 
      max-width: 100vw;  
      overflow-x: auto; 
      margin: 0 auto ;
-     
-    
   }
+  
   .all-branch-table{
      width: 100vw;
     left: calc(-50vw + 50%) !important;
@@ -557,6 +562,11 @@ max-width: 100vw;
       padding-top: 1rem !important;
       margin-bottom: 1rem !important;
    }
+   
+   .links-container{
+    width: 100%;
+    max-width: 100vw;
+   }
    .text1{
      font-size: 1.5rem !important;
    }
@@ -579,9 +589,15 @@ max-width: 100vw;
   .call-link, .whatsapp-link{
     font-size: 0.75rem;
   }
+  .register-link{
+    width: 200px;
+ }
   .signup-component, .login-component, .beyoin-member-profile, .icon-details, .project-details, .posts-container{
     margin-top:  117.16px !important;
     margin: 0 auto;
+   }
+   .signup-component{
+    width: 90%;
    }
    .footer-p span {
    font-size: 0.7rem;
@@ -592,7 +608,9 @@ max-width: 100vw;
    .mobile-logo-container{
     display: none;
   }
-  
+  .register-link{
+   width: 10%;
+}
   
   .moble-support{
     display: none;
@@ -639,7 +657,6 @@ max-width: 100vw;
   }
   .links a {
     background: transparent;
-    color: var(--clr-white);
      font-size: 0.8rem; 
     text-transform: capitalize;
     letter-spacing: 0;

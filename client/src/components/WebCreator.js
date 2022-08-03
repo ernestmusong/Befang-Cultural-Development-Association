@@ -5,7 +5,7 @@ import CallNow from './CallNow';
 import WhatsAppNow from './WhatsAppNow';
 export default function WebCreator() {
   return (
-    <div className='web-creator'>
+    <>
          <Title3 title="thank you for your interest in supporting this website" />
          <p style={{color:"Var(--softWhite)", textAlign:"center"}}>Please send your support to this person !</p>
      <table className="table table-bordered mx-auto">
@@ -27,6 +27,7 @@ export default function WebCreator() {
             </tbody>
       </table>
       <Title3 title="bank details" />
+      <div className='web-creator-table'>
       <table className="table table-bordered mx-auto">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
                 <tr>
@@ -47,6 +48,8 @@ export default function WebCreator() {
                 </tr>
             </tbody>
       </table>	
+      </div>
+      
       <div className='col-md-8 col-lg-6 mx-auto callnow-container'>
           <CallNow number={`tel:+237676308067` }/>
           <WhatsAppNow number={`https://api.whatsapp.com/send?phone=237676308067` }/>
@@ -60,6 +63,6 @@ export default function WebCreator() {
                         Go Back
            </Link>
      </div>
-    </div>
+    </>
   )
 }

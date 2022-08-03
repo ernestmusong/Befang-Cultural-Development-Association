@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import banner from "../banner-image.jpeg";
+import banner from "../hero-image.jpeg";
 import UserService from "../services/user.service";
 import { Link } from "react-router-dom";
 import {Branches} from '../Data';

@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
- 
+import { FloatingWhatsApp } from 'react-floating-whatsapp-button'
+import 'react-floating-whatsapp-button/dist/index.css'
 
 export default class Footer extends Component {
     render() {
         return (
-            <div className="container-fluid footer-bg py-4">
-                 
-            
+            <div className="container footer-bg py-4">
                 <div className="row d-flex flex-column justify-content-around align-items-center">
                    <div  >
                       <p className="text-light footer-p">
@@ -20,8 +19,8 @@ export default class Footer extends Component {
                    <div>
                        <p  className="footer-p text-center text-b text-muted">Powered By React + Node + mongoDB </p>
                    </div>
-       
-      </div>
+                 </div> 
+                 <FloatingWhatsApp phone='237676308067' zIndex='1000' showOnIE='false' autoOpenTimeout='1000000' headerTitle='Ask Questions Here !' popupMessage='Support the website here !'/>  
             </div>
         )
     }
