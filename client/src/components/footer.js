@@ -20,7 +20,7 @@ export default class Footer extends Component {
                        <p  className="footer-p text-center text-b text-muted">Powered By React + Node + mongoDB </p>
                    </div>
                  </div> 
-                 <FloatingWhatsApp phone='237676308067' zIndex='1000' showOnIE='false' autoOpenTimeout='1000000' headerTitle='Ask Questions Here !' popupMessage='Support the website here !'/>  
+                 <FloatingWhatsApp phone='237676308067' size='45px' zIndex='1000' showOnIE='false' autoOpenTimeout='1000000' headerTitle='Ask Questions Here !' popupMessage='Support the website here !'/>  
             </div>
         )
     }
