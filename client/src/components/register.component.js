@@ -4,7 +4,6 @@ import Input from "react-validation/build/input";
 import Select from "react-validation/build/select";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
-
 import AuthService from "../services/auth.service";
 
  const required = value => {
@@ -150,7 +149,6 @@ export default class Register extends Component {
     return (
       <div>
         <div className="signup-component">
-           
           <Form
             onSubmit={this.handleRegister}
             ref={c => {
@@ -216,7 +214,7 @@ export default class Register extends Component {
                 </div>
                
                 <div className="form-group col-lg-3">
-                  <label style={{color:"Var(--softWhite)"}} htmlFor="email">Email (optional)</label>
+                  <label style={{color:"Var(--softWhite)"}} htmlFor="email">Email</label>
                   <Input
                     type="text"
                     className="form-control"
@@ -252,7 +250,7 @@ export default class Register extends Component {
                   </Select>
                 </div>
                 <div className="form-group col-lg-3">
-                  <label style={{color:"Var(--softWhite)"}} htmlFor="social group">Social Group (optional)</label>
+                  <label style={{color:"Var(--softWhite)"}} htmlFor="social group">Sub Group (optional)</label>
                   <select
                     className="form-control"
                     name="socialgroup"
@@ -284,7 +282,7 @@ export default class Register extends Component {
               </div>
               <div className="form-row mx-auto">
                 <div className="form-group col-lg-6">
-                  <button className="btn btn-primary btn-block">Sign Up</button>
+                  <button className="btn btn-primary btn-block">Register</button>
                 </div>
             </div>
               </div>

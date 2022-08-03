@@ -11,7 +11,18 @@
           "status":"open",
           "body":"This project is aimed at ensuring the availability of pipe-borne water throughout the Befang territory.",
           "desc": "Distribution of pipe-borne water to all quarters in the Befang Village."
-      }  
+      }, 
+      {
+        "id": 2,
+        "url":"/web-creator",
+        "img": "web-project.jpeg",
+        "title": "Web Hosting and database upgrade",
+        "amount": 85000,
+        "realised":0,
+        "status":"open",
+        "body":"This website is a personal initiative by the developer. It is currently hosted under a subdomain on heroku which is a free cloud platform. However we need to purchase and secure a dedicated domain extension like becuda.com and use a shared hosting plan. Domains, SSL and hosting are billed annually. We also need to upgrade the database which currently has a capacity of just 512MB. This capacity will not be enough to save the data as the user base grows with time. ",
+        "desc": "Website domain and hosting, database upgrade"
+    }   
   ],
 
   "befangChief": [

@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import banner from "../hero-image.jpeg";
 import UserService from "../services/user.service";
-import { Link } from "react-router-dom";
-import {Branches} from '../Data';
-import CountUp from 'react-countup';
 import Chief from "./ChiefProfile";
 import BecudaExe from "./becudaExe";
 import Title from "./Title";
 import GreatIcons from "./GreatIcons";
+import Counter from "./CountUpComponent";
 
 export default class Home extends Component {
   constructor(props) {
@@ -39,29 +37,13 @@ export default class Home extends Component {
   render() {
     return (
       <>
-      <div className="banner mx-auto" style={{ backgroundImage: `url(${banner})`}}>
+      <div className="banner mx-auto" style={{ backgroundImage: `url(${banner})` }}>
         <div className="text1-wrapper " style={{margin: "0 auto", marginBottom:"4rem", paddingTop:"4rem" }}>
             <h1 className="text1" >welcome to becuda</h1>
         </div>
-        <div className="container-in-banner">
-        {Branches.map(branch => (
-        <Link to={branch.link} style={{ textDecoration: "none" }} key={branch.id}>
-               <div className="text-center count-up-wrapper" >
-                <div className="counter-wrapper">
-                <h6 className=" text-capitalize" style={{color: "var(--mainOrange)"}}>{branch.name}</h6>
-               <h1 className="value"><CountUp
-          start={0}
-          end={branch.value}
-          duration={3}
-        />    </h1>
-               <h6 className=" text-capitalize"  style={{color: "var(--mainOrange)" }}>{branch.text}</h6>
-                </div>
-           </div>
-         </Link>
-          ))}
-        </div>
       </div>
-       
+      <Title title="all our branches" />
+       <Counter />
       <Title title="make befang great again" />
       <Chief />
       <Title title="becuda executive members" />

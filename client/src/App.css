@@ -529,7 +529,7 @@ nav{
     margin-top:   117.16px !important;
   }
   .banner{
-height: calc(70vh - 117.16px) !important;
+height: calc(100vh - 117.16px) !important;
 margin-top: 117.16px;
 max-width: 100vw;
    } 
