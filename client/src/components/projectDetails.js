@@ -75,7 +75,7 @@ const ProjectDetails = (props) => {
                  Closed!
             </button>}
           </div>
-          <div className='mt-3'><Link to="/contributors" className='text-primary text-capitalize my-4'>see Contributors </Link></div>
+          <div className='mt-3 text-warning'><Link to={project.id === 2 ? "/web-supporters" : "/contributors"} className='text-white text-capitalize my-4'>{project.id === 2 ? "see supporters" : "see contributors"} </Link></div>
             
         </div>
       </div>

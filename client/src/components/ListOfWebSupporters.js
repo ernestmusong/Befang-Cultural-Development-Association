@@ -17,7 +17,7 @@ const ListOfSupporters=() => {
       if(supporters.length == 2) return <CommingSoon title="there are no supporters at the moment."/>;
   return (
     <div>
-         <Title3 title="we thank you all for your enormous support for the continued development and maintenance of this website" />
+         <Title3 title="thank you all for supporting the website" />
      <table className="table table-bordered">
 			<thead style={{backgroundColor:"#DCDCDC"}}>
                 <tr>
