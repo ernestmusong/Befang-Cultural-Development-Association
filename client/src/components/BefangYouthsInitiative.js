@@ -40,6 +40,7 @@ const BefangYouthsInitiative=()=>{
               </div>
           </div>
           <h6 className='motto'>motto : together we stand, divided we fall</h6>
+          <Link className='text-uppercase' style={{color:"var(--mainOrange)"}} to='/contributors'>check your contributions here</Link>
       </div>
       <WhoWeAre />
       <Title title="executive members of the Group" />

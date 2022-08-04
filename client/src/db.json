@@ -161,28 +161,45 @@
    "profession":"",
           "info":""
               },
-      {
-  
-  
-          "id": 3,
-          "name": "Ichu Kalvin",
-          "img":"kalv.jpeg",
-          "title":"Secretary General",
-          "executive":true,
-          "profession":"",
-          "info":""
-                      },
-          {
-  
-  
-          "id": 4,
-          "name": "Ngeh Radivin",
-          "img":"radivin.jpeg",
-          "title":"advicer",
-          "profession":"",
-          "info":"",
-          "executive":true
-                      }
+{
+
+
+    "id": 3,
+    "name": "Ichu Kalvin",
+    "img":"kalv.jpeg",
+    "title":"Secretary General",
+    "executive":true,
+    "profession":"",
+    "info":""
+                },
+    {
+    "id": 4,
+    "name": "Ngeh Radivin",
+    "img":"radivin.jpeg",
+    "title":"advicer",
+    "profession":"",
+    "info":"",
+    "executive":true
+        },
+    {
+    "id": 5,
+    "name": "Dang Brita",
+    "img":"Dang-Brita.jpeg",
+    "title":"Financial secretary",
+    "profession":"",
+    "info":"",
+    "executive":true
+        },
+     
+  {
+    "id": 6,
+    "name": "Mendi Georgette Endem",
+    "img":"mendi-georgette.jpeg",
+    "title":"treasurer",
+    "profession":"",
+    "info":"",
+    "executive":true
+        }
                   
     
       ],
@@ -234,133 +251,212 @@
         {
     
     "id": 1,
-     "name": "contributor name",
-    "amount": 150,
-    "branch": "bamenda",
+     "name": "Akeh leslie",
+    "amount": 600,
+    "branch": "beyoin",
     "water destribution": true
         },
+    {
+
+        "id": 2,
+        "name": "tem jenis kakon",
+        "amount":600,
+        "branch": "beyoin",
+        "water destribution": true
+          },
+    {
+
+      "id": 3,
+      "name": "bezeng jimuel",
+      "amount":600,
+      "branch": "beyoin",
+      "water destribution": true
+        },
+    {
+
+      "id": 4,
+      "name": "bezeng sonita",
+      "amount":600,
+      "branch": "beyoin",
+      "water destribution": true
+        },
+    {
+
+      "id": 5,
+      "name": "besseng donarise",
+      "amount":600,
+      "branch": "beyoin",
+      "water destribution": true
+  },
+    {
+
+      "id": 6,
+      "name": "aleh chantal",
+      "amount":600,
+      "branch": "beyoin",
+      "water destribution": true
+        },
+    {
+
+      "id": 7,
+      "name": "kum miloreat",
+      "amount":600,
+      "branch": "beyoin",
+      "water destribution": true
+        },
+    {
+
+      "id": 8,
+      "name": "nick nick",
+      "amount":600,
+      "branch": "beyoin",
+      "water destribution": true
+        },
+      {
+
+        "id": 9,
+        "name": "abanda louis",
+        "amount":600,
+        "branch": "beyoin",
+        "water destribution": true
+          },
         {
-    
-            "id": 2,
-            "name": "contributor name",
-            "amount":100,
-            "branch": "bamenda",
+
+          "id": 10,
+          "name": "ojang wou angorm",
+          "amount":600,
+          "branch": "beyoin",
+          "water destribution": true
+            },
+          {
+
+            "id": 11,
+            "name": "ojang madcolin",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+         },
+          {
+
+            "id": 12,
+            "name": "mendi georgette",
+            "amount":600,
+            "branch": "beyoin",
             "water destribution": true
               },
-              {
-    
-                "id": 3,
-                "name": "contributor name",
-                "amount":100,
-                "branch": "buea",
-                "water destribution": true
-                  },
-                  {
-    
-                    "id": 4,
-                    "name": "contributor name",
-                    "amount":200,
-                    "branch": "buea",
-                    "water destribution": true
-                      },
-                      {
-    
-                        "id": 5,
-                        "name": "contributor name",
-                        "amount":123,
-                        "branch": "muea",
-                        "water destribution": true
-                          },
-                          {
-    
-                            "id": 6,
-                            "name": "contributor name",
-                            "amount":143,
-                            "branch": "muea",
-                            "water destribution": true
-                              },
-                              {
-    
-                                "id": 7,
-                                "name": "contributor name",
-                                "amount":123,
-                                "branch": "mutengene",
-                                "water destribution": true
-                                  },
-                                  {
-    
-                                    "id": 8,
-                                    "name": "contributor name",
-                                    "amount":423,
-                                    "branch": "muea",
-                                    "water destribution": true
-                                      },
-                                      {
-    
-                                        "id": 9,
-                                        "name": "contributor name",
-                                        "amount":123,
-                                        "branch": "limbe",
-                                        "water destribution": true
-                                          },
-                                          {
-    
-                                            "id": 10,
-                                            "name": "contributor name",
-                                            "amount":123,
-                                            "branch": "limbe",
-                                            "water destribution": true
-                                              },
-                                              {
-    
-                                                "id": 11,
-                                                "name": "contributor name",
-                                                "amount":123,
-                                                "branch": "douala",
-                                                "water destribution": true
-                                                  },
-                                                  {
-    
-                                                    "id": 12,
-                                                    "name": "contributor name",
-                                                    "amount":163,
-                                                    "branch": "douala",
-                                                    "water destribution": true
-                                                      },
-                                                      {
-    
-                                                        "id": 13,
-                                                        "name": "contributor name",
-                                                        "amount":153,
-                                                        "branch": "yaounde",
-                                                        "water destribution": true
-                                                          },
-                                                          {
-    
-                                                            "id": 14,
-                                                            "name": "contributor name",
-                                                            "amount":193,
-                                                            "branch": "diaspora",
-                                                            "water destribution": true
-                                                              },
-                                                              {
-    
-                                                                "id": 15,
-                                                                "name": "contributor name",
-                                                                "amount":723,
-                                                                "branch": "diaspora",
-                                                                "water destribution": true
-                                                                  },
-                                                                  {
-    
-                                                                    "id": 16,
-                                                                    "name": "contributor name",
-                                                                    "amount":123,
-                                                                    "branch": "yaounde",
-                                                                    "water destribution": true
-                                                                      }
+          {
+
+            "id": 13,
+            "name": "cynthia bih",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+              },
+            {
+
+              "id": 14,
+              "name": "kum yanick",
+              "amount":600,
+              "branch": "beyoin",
+              "water destribution": true
+                },
+            {
+
+              "id": 15,
+              "name": "milien",
+              "amount":600,
+              "branch": "beyoin",
+              "water destribution": true
+                },
+            {
+
+              "id": 16,
+              "name": "kum alvin",
+              "amount":600,
+              "branch": "beyoin",
+              "water destribution": true
+                },
+            {
+
+              "id": 17,
+              "name": "stella",
+              "amount":600,
+              "branch": "beyoin",
+              "water destribution": true
+                },
+          {
+
+            "id": 18,
+            "name": "kum redrick",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+              },
+          {
+            "id": 19,
+            "name": "menjong collette",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           },
+           {
+            "id": 20,
+            "name": "ofon fabiola",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           },
+           {
+            "id": 21,
+            "name": "ashie jeannette",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           },
+           {
+            "id": 22,
+            "name": "dang brita",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           },
+           {
+            "id": 23,
+            "name": "bezeng edwin",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           },
+           {
+            "id": 24,
+            "name": "katche remih",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           },
+           {
+            "id": 25,
+            "name": "itong resdiren",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           },
+           {
+            "id": 26,
+            "name": "itong frederick",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           },
+           {
+            "id": 20,
+            "name": "dang minet",
+            "amount":600,
+            "branch": "beyoin",
+            "water destribution": true
+           }
        
-                                                          ]
+              ]
 
 
 }

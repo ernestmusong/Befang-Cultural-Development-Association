@@ -18,6 +18,7 @@ const ListOfContributors=() => {
     const [limbe, setLimbe] = useState([])
     const [mutengene, setMutengene] = useState([])
     const [diaspora, setDiaspora] = useState([])
+    const [beyoin, setBeyoin] = useState([])
          
     
        useEffect(() =>{
@@ -79,6 +80,13 @@ const ListOfContributors=() => {
            return sum + item
          }, 0)
          setDiaspora(diasporaTotal)
+
+         let beyoin = contributions.contributors.filter(contributor => contributor.branch === "beyoin");
+         let beyoinAmts = beyoin.map(person => person.amount)
+         let beyoinTotal = beyoinAmts.reduce((sum, item) => {
+           return sum + item
+         }, 0)
+         setBeyoin(beyoinTotal)
           
 
          let contributors = contributions.contributors;
@@ -111,7 +119,7 @@ const ListOfContributors=() => {
                      <td>{douala} cfa</td>
                      <td>{yaounde} cfa</td>
                      <td>{diaspora} cfa</td>
-                     <td>--</td>
+                     <td>{beyoin} cfa</td>
                      <td>--</td>
                  </tr>
                   
@@ -120,6 +128,30 @@ const ListOfContributors=() => {
    </div>
       <Title4 title="List of all contributions." />
       <div className='list-of-all-contributions'>
+        {/* befang youths initiative branch */}
+      <div className='col-md-6 col-lg-4  mx-auto list-per-branch'>
+        <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...befang youths initiative branch</div>
+      <table className="table table-bordered">
+			<thead style={{backgroundColor:"#DCDCDC"}}>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                </tr>
+			</thead>
+            <tbody>
+            {contributors.filter(contributor => {
+                    return( contributor["water destribution"]===true && contributor.branch==="beyoin")}).map(contributor =>(
+                     <tr className="bg-light" key={contributor.id}>
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
+                 </tr>
+                    ))}
+               
+            </tbody>
+      </table>
+      <ContributeNowLink />	
+      </div>
+        {/* buea branch */}
         <div className='col-md-6 col-lg-4  mx-auto list-per-branch'>
         <div className='text-center text-uppercase py-2'  style={{backgroundColor:"var(--mainOrange)", fontWeight:"bold"}}>Water distribution...buea branch</div>
       <table className="table table-bordered">
@@ -133,8 +165,8 @@ const ListOfContributors=() => {
             {contributors.filter(contributor => {
                     return( contributor["water destribution"]===true && contributor.branch==="buea")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-                     <td>{contributor.name}</td>
-                     <td>{contributor.amount} cfa</td> 
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
                
@@ -156,8 +188,8 @@ const ListOfContributors=() => {
             {contributors.filter(contributor => {
                     return( contributor["water destribution"]===true && contributor.branch==="bamenda")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-                     <td>{contributor.name}</td>
-                     <td>{contributor.amount} cfa</td> 
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
             </tbody>
@@ -178,8 +210,8 @@ const ListOfContributors=() => {
             {contributors.filter(contributor => {
                     return( contributor["water destribution"]===true && contributor.branch==="muea")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-                     <td>{contributor.name}</td>
-                     <td>{contributor.amount} cfa</td> 
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
             </tbody>
@@ -200,8 +232,8 @@ const ListOfContributors=() => {
             {contributors.filter(contributor => {
                     return( contributor["water destribution"]===true && contributor.branch==="mutengene")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-                     <td>{contributor.name}</td>
-                     <td>{contributor.amount} cfa</td> 
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
             </tbody>
@@ -222,8 +254,8 @@ const ListOfContributors=() => {
             {contributors.filter(contributor => {
                     return( contributor["water destribution"]===true && contributor.branch==="limbe")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-                     <td>{contributor.name}</td>
-                     <td>{contributor.amount} cfa</td> 
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
             </tbody>
@@ -244,8 +276,8 @@ const ListOfContributors=() => {
             {contributors.filter(contributor => {
                     return( contributor["water destribution"]===true && contributor.branch==="yaounde")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-                     <td>{contributor.name}</td>
-                     <td>{contributor.amount} cfa</td> 
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
             </tbody>
@@ -266,8 +298,8 @@ const ListOfContributors=() => {
             {contributors.filter(contributor => {
                     return( contributor["water destribution"]===true && contributor.branch==="douala")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-                     <td>{contributor.name}</td>
-                     <td>{contributor.amount} cfa</td> 
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
             </tbody>
@@ -288,8 +320,8 @@ const ListOfContributors=() => {
             {contributors.filter(contributor => {
                     return( contributor["water destribution"]===true && contributor.branch==="diaspora")}).map(contributor =>(
                      <tr className="bg-light" key={contributor.id}>
-                     <td>{contributor.name}</td>
-                     <td>{contributor.amount} cfa</td> 
+                     <td className='text-capitalize'>{contributor.name}</td>
+                     <td className='text-uppercase'>{contributor.amount} cfa</td> 
                  </tr>
                     ))}
             </tbody>
