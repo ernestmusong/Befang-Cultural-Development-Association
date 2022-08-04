@@ -456,6 +456,59 @@
             "water destribution": true
            }
        
+              ],
+
+
+
+
+
+
+
+              "befangDiaspora": [
+    
+                {
+            
+            "id": 1,
+             "name": "president name",
+            "img":"becuda-logo.png",
+            "title":"president",
+            "profession":"",
+             "info":"",
+             "executive":true
+                },
+                {
+            
+                 
+            "id": 2,
+            "name": "treasurer name",
+           "img":"becuda-logo.png",
+           "title":"treasurer",
+           "executive":true,
+           "profession":"",
+                  "info":""
+                      },
+        {
+        
+        
+            "id": 3,
+            "name": "secretary name",
+            "img":"becuda-logo.png",
+            "title":"Secretary General",
+            "executive":true,
+            "profession":"",
+            "info":""
+                        },
+                        {
+        
+        
+                          "id": 4,
+                          "name": "secretary name",
+                          "img":"becuda-logo.png",
+                          "title":"Secretary General",
+                          "executive":false,
+                          "profession":"",
+                          "info":""
+                                      }
               ]
 
 

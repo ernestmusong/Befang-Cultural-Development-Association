@@ -84,7 +84,7 @@ export  const Branches = [
         treasurerTitle:"treasurer",
         value:67,
         text: "members",
-        link: "/comming-soon",
+        link: "/diaspora",
         
     },
     {

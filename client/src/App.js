@@ -26,6 +26,7 @@ import BeyoinMember from "./components/BeyoinMember";
 import ListOfSupporters from "./components/ListOfWebSupporters";
 import ListOfContributors from "./components/ListOfContributors";
 import WebCreator from "./components/WebCreator";
+import BefangDiaspora from "./components/BefangDiaspora";
  
 
 class App extends Component {
@@ -278,6 +279,7 @@ class App extends Component {
             <Route path="/contribute-page" component={ContributePage} />
             <Route path="/contributors" component={ListOfContributors} />
             <Route path="/branches/:branchId" component={ContributeDetails} />
+            <Route path="/diaspora" component={BefangDiaspora} />
             <Route path="/beyoin/:memberId" component={BeyoinMember} />
             <Route path="/web-supporters" component={ListOfSupporters} />
             <Route path="/web-creator" component={WebCreator} />
