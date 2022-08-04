@@ -111,16 +111,16 @@ const ListOfContributors=() => {
 			</thead>
             <tbody>
                      <tr className="bg-light">
-                     <td>{bamenda} cfa</td>
-                     <td>{buea} cfa</td>
-                     <td>{muea} cfa</td>
-                     <td>{mutengene} cfa</td>
-                     <td>{limbe} cfa</td>
-                     <td>{douala} cfa</td>
-                     <td>{yaounde} cfa</td>
-                     <td>{diaspora} cfa</td>
-                     <td>{beyoin} cfa</td>
-                     <td>--</td>
+                     <td className='text-uppercase'>{bamenda} cfa</td>
+                     <td className='text-uppercase'>{buea} cfa</td>
+                     <td className='text-uppercase'>{muea} cfa</td>
+                     <td className='text-uppercase'>{mutengene} cfa</td>
+                     <td className='text-uppercase'>{limbe} cfa</td>
+                     <td className='text-uppercase'>{douala} cfa</td>
+                     <td className='text-uppercase'>{yaounde} cfa</td>
+                     <td className='text-uppercase'>{diaspora} cfa</td>
+                     <td className='text-uppercase'>{beyoin} cfa</td>
+                     <td className='text-uppercase'>--</td>
                  </tr>
                   
             </tbody>
