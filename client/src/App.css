@@ -591,16 +591,23 @@ max-width: 100vw;
   .call-link, .whatsapp-link{
     font-size: 0.75rem;
   }
-  .register-link{
+   .register-link{
     width: 200px;
- }
+   }
   .signup-component, .login-component, .beyoin-member-profile, .icon-details, .project-details, .posts-container{
-    margin-top:  117.16px !important;
     margin: 0 auto;
+    margin-top:  117.16px ;
+    height: calc(100vh - 117.16px);
+    max-height: calc(100vh - 117.16px);
+    overflow-y:auto;
    }
-   .signup-component{
+    
+    .signup-component{
     width: 90%;
-   }
+   
+     
+   } 
+    
    .footer-p span {
    font-size: 0.7rem;
   }
