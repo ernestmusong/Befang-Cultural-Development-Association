@@ -44,7 +44,7 @@ body {
   overflow-x: hidden;
   font-size: 0.875rem;
   box-sizing: border-box;
-  
+  overflow-y: scroll;
 }
 
 a {
