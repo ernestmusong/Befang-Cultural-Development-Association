@@ -79,8 +79,8 @@ export  const Branches = [
     {
         id: 8,
         name: "Diaspora",
-        treasurerName:"treasurer name",
-        treasurerNumber: 237676308067,
+        treasurerName:"Dr Bezeng Simon Bezeng",
+        treasurerNumber: 27736500107,
         treasurerTitle:"treasurer",
         value:67,
         text: "members",

@@ -469,10 +469,11 @@
                 {
             
             "id": 1,
-             "name": "president name",
+             "name": "Mrs Florence Chewachong",
             "img":"becuda-logo.png",
             "title":"president",
             "profession":"",
+            "country":"uk",
              "info":"",
              "executive":true
                 },
@@ -480,9 +481,10 @@
             
                  
             "id": 2,
-            "name": "treasurer name",
+            "name": "Dr Bezeng Simon Bezeng",
            "img":"becuda-logo.png",
            "title":"treasurer",
+           "country":"south africa",
            "executive":true,
            "profession":"",
                   "info":""
@@ -491,9 +493,10 @@
         
         
             "id": 3,
-            "name": "secretary name",
+            "name": "Mr mendi Bertrand",
             "img":"becuda-logo.png",
-            "title":"Secretary General",
+            "title":"SG",
+            "country":"south africa",
             "executive":true,
             "profession":"",
             "info":""
@@ -502,10 +505,11 @@
         
         
                           "id": 4,
-                          "name": "secretary name",
+                          "name": "Mr Bonglibi Amah",
                           "img":"becuda-logo.png",
-                          "title":"Secretary General",
+                          "title":"public relations officer",
                           "executive":false,
+                          "country":"uae",
                           "profession":"",
                           "info":""
                                       }

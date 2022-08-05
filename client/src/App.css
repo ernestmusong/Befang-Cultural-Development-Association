@@ -181,12 +181,11 @@ nav{
   flex-direction: column;
   align-items: flex-start;
   min-width: 100%;
-  margin: 1px;
   padding-left: 3px;
 }
 .dropdown-content .dropdown-link:hover {
   color: var(--clr-black);
-   
+   margin: 1px;
 }
 .dropdown:hover .dropdown-content {
   display: block;

@@ -101,33 +101,30 @@ const WhoWeAre=() => {
            <Title2 title="who we are" />
             <p style={{ color:"Var(--softWhite)"}}>
               We are proud Sons and Daughters of Befang. Befang Diaspora Community (BDC)
-               is a group of members belonging to the Befang village but living out of Cameroon. It primarily operates on WhatsApp created by <span className='text-uppercase' style={{ color:"Var(--lightGreen)"}}> Che Bonglibi Honore Amah </span> 
-               who is currently the financial secretary of the group. It was based on the idea of <span className='text-capitalize' style={{ color:"Var(--lightRed)"}}>"Together we stand, divided we fall" </span> 
-               that inspired him to create this group so as to bring all sons and daughters of Befang living outside of the country together. It is a purely democratic group where members freedom of speech is a value. The group currently has about 67 members.
-               Membership is currently free but limited only to all sons and daughters of Befang living out of Cameroon. Just contact <a  href='https://api.whatsapp.com/send?phone=905452522743'>+905452522743</a> to join.
+               is a group of members belonging to the Befang village but living out of Cameroon. It primarily operates on WhatsApp created by <span className='text-uppercase' style={{ color:"Var(--lightGreen)"}}> Mrs Florence Chewachong Ndum Amah </span> 
+               who is currently the president of the Community.   
+               The group currently has about 67 members.
+               Membership is fee is <span className='text-warning'>25000 CFA</span> renewable annually at <span className='text-warning'>10000 CFA</span> limited only to all sons and daughters of Befang living out of Cameroon. Just contact <a  href='https://api.whatsapp.com/send?phone=905452522743'>+905452522743</a> to join.
             </p>
            </div>
-           {/* <div className='col-sm-9 col-md-8 col-lg-6 mx-auto text-center' >
+            <div className='col-sm-9 col-md-8 col-lg-6 mx-auto text-center' >
            <Title2 title="what we do" />
             <p style={{ color:"Var(--softWhite)"}}>
-              Our motto is  <span className='text-capitalize' style={{ color:"Var(--lightRed)"}}>"Together we stand and divided we fall"</span>. This is the 
-              source of our strenght. Every member is his/her brother's keeper. We stand to give collective support to members in times of trouble. 
-              We also support our brothers and sisters financially to help them establish and grow in their various domains.
+              Say something here
             </p>
-           </div> */}
+           </div> 
            <div className='col-sm-9 col-md-8 col-lg-6 mx-auto text-center' >
            <Title2 title="our mission" />
             <p style={{ color:"Var(--softWhite)"}}>
-              To make the people of Befang hence the Befang Village Great.
-              To be the small village that gives light to the whole of Menchum Division.
+            Say something here
             </p>
            </div>
            <div className='col-sm-9 col-md-8 col-lg-6 mx-auto text-center' >
            <Title2 title="our vision" />
             <p style={{ color:"Var(--softWhite)"}}>
-                <span className='text-capitalize' style={{ color:"Var(--lightRed)"}}>
-                     Make Befang the ligt of Menchum in the nearest future.
-                 </span>
+                
+                Say something here
+                  
             </p>
            </div>
           </div>

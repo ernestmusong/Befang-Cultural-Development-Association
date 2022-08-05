@@ -36,6 +36,7 @@ const DiasporaMemberProfile = (props) => {
         <div className="col-10 my-3   col-md-6 mx-auto  text-capitalize">
           <h2 style={{color:"Var(--heroWhite)", fontSize: "1.2rem"}}>Name: {mem.name} </h2>
           <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Position: {mem.title} </h4>
+          <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>country: {mem.country} </h4>
           <h4 style={{color:"Var(--softWhite)", fontSize: "1.2rem"}}>Profession: {mem.profession ==""? "Undefined!" : mem.profession} </h4>
             <p  style={{color: "#acaea9", fontSize:"12px"}}>{mem.info ==""? `Please ${mem.name} register on the website to complete your profile` : mem.info}</p>
           <div>
