@@ -27,7 +27,7 @@ import ListOfSupporters from "./components/ListOfWebSupporters";
 import ListOfContributors from "./components/ListOfContributors";
 import WebCreator from "./components/WebCreator";
 import BefangDiaspora from "./components/BefangDiaspora";
- 
+import DiasporaMember from "./components/DiasporaMember";
 
 class App extends Component {
   
@@ -280,6 +280,7 @@ class App extends Component {
             <Route path="/contributors" component={ListOfContributors} />
             <Route path="/branches/:branchId" component={ContributeDetails} />
             <Route path="/diaspora" component={BefangDiaspora} />
+            <Route path="/diaspora-member/:diasporaId" component={DiasporaMember} />
             <Route path="/beyoin/:memberId" component={BeyoinMember} />
             <Route path="/web-supporters" component={ListOfSupporters} />
             <Route path="/web-creator" component={WebCreator} />

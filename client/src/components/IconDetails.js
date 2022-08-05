@@ -24,7 +24,7 @@ const IconDetails = (props) => {
           setIcon(icon)
          }
         
-         , [icon, iconId])
+         , [ iconId])
          if(icon.img == "") return null;
 
     return ( 

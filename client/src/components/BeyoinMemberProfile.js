@@ -25,7 +25,7 @@ const BeyoinMemberProfile = (props) => {
           setMember(member)
          }
         
-         , [member, memberId])
+         , [memberId])
           
          if(member.img == "") return null;
 

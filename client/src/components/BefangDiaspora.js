@@ -15,8 +15,8 @@ const BefangDiaspora=()=>{
   let executiveMembers = members.filter(member => member.executive === true)
   return (
     <>
-       <div class="page-hero" id="hero-img">
-          <h1 class="page-hero-text">Welcome to BEFANG Diaspora Community</h1>
+       <div className="page-hero" id="hero-img">
+          <h1 className="page-hero-text">Welcome to BEFANG Diaspora Community</h1>
           <div className="beyoin-counter">
               <div className="text-center" style={{ backgroundColor: "var(--darkBlue)", padding:"10px", display:"grid", placeItems:"center"}}>
                     <div>
@@ -70,7 +70,7 @@ const Member=({id, name, img}) => {
             </div>
                <div className="px-2">
                <h6 style={{ color:"Var(--mainOrange)"}}>{name}</h6>
-                 <Link to={`/diaspora/${id}`} style={{color:"Var(--heroWhite)"}}>See Profile</Link>
+                 <Link to={`/diaspora-member/${id}`} style={{color:"Var(--heroWhite)"}}>See Profile</Link>
                </div>
           </div>
         // end
