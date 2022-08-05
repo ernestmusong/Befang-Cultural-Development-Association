@@ -9,7 +9,7 @@ const AllProjects =()=>{
   useEffect(() =>{
     let projects = allProjects.projects;
     setProjects(projects)
-  }, [projects])
+  }, [])
   return(
     <div className="posts-container">
       {projects.map(project => (

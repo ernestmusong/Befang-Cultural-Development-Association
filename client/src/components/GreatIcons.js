@@ -9,7 +9,7 @@ const GreatIcons =()=>{
   useEffect(() =>{
     let members = greatIcons.greatIcons;
     setMembers(members)
-  }, [members])
+  }, [])
   return(
      <div className='container mb-4'>
         <div className=' great-icons'>

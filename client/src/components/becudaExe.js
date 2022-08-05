@@ -8,7 +8,7 @@ const BecudaExe =()=>{
   useEffect(() =>{
     let members = becudaExe.becudaExecutive;
     setMembers(members)
-  }, [members])
+  }, [])
   return(
     <div>
     <table className="table table-bordered">

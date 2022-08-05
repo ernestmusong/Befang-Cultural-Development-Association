@@ -11,7 +11,7 @@ const BefangYouthsInitiative=()=>{
   useEffect(() =>{
     let members = befangYouthsInitiative.beyoin;
     setMembers(members)
-  }, [members])
+  }, [])
   let executiveMembers = members.filter(member => member.executive === true)
   return (
     <>

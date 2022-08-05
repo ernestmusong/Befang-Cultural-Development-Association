@@ -11,7 +11,7 @@ const BefangDiaspora=()=>{
   useEffect(() =>{
     let members = befangDiaspora.befangDiaspora;
     setMembers(members)
-  }, [members])
+  }, [])
   let executiveMembers = members.filter(member => member.executive === true)
   return (
     <>
