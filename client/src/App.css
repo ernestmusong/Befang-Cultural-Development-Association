@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
-@font-face {
-  font-family: Clip;
-  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-}
+/* @font-face {
+   font-family: Clip;
+   src: url("https://acupoftee.github.io/fonts/Clip.ttf"); 
+}  */
 
 :root {
   --lightBlue: #1c2b3f;
@@ -44,7 +44,7 @@ body {
   overflow-x: hidden;
   font-size: 0.875rem;
   box-sizing: border-box;
-  overflow-y: scroll;
+   
 }
 
 a {
@@ -484,6 +484,9 @@ nav{
     position: fixed !important;
     background-color: var(--darkBlue);
     width: 100vw;
+  }
+  html{
+     scroll-behavior: smooth;
   }
    
   .info-wrapper{
