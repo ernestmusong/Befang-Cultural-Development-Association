@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
 import {Link } from "react-router-dom";
-import { Branches } from '../Data';
+import { Branches } from '../db.json';
 import CallNow from './CallNow';
 import WhatsAppNow from './WhatsAppNow';
 

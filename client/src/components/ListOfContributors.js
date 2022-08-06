@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
 import Title4 from './Title4';
 import contributions  from '../db.json';
-import {Branches} from '../Data';
+import {Branches} from '../db.json';
 import allProjects from '../db.json'
 import ContributeNowLink from './ContributeNowLink';
 import CommingSoon from './CommingSoon';
