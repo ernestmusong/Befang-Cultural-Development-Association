@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
   import greatIcons from '../db.json'
-//  import { allProjects } from '../Data';
 
 const GreatIcons =()=>{
    

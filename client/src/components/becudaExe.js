@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
   import becudaExe from '../db.json'
-//  import { allProjects } from '../Data';
 
 const BecudaExe =()=>{
    
