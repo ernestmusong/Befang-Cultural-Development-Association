@@ -466,7 +466,7 @@ nav{
 /*Footer*/
 .footer-bg {
   background-color: var(--clr-black) !important;
-  display: flex !important;
+  display: none !important;
   align-items: center !important;
   justify-content: center !important;
   width: 100%;
@@ -485,9 +485,6 @@ nav{
     position: fixed !important;
     background-color: var(--darkBlue);
     width: 100vw;
-  }
-  html{
-     scroll-behavior: smooth;
   }
    
   .info-wrapper{
