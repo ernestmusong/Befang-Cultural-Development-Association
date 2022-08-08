@@ -482,14 +482,14 @@ nav{
     display: none;
   }
   nav{
-    
+    position: sticky !important;
     background-color: var(--darkBlue);
     width: 100vw;
     
   }
    
   .info-wrapper{
-    position: fixed;
+    position: sticky !important;
     z-index: 999;
     top: 87.16px;
   }
