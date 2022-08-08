@@ -30,7 +30,7 @@ const BeyoinMemberProfile = (props) => {
          if(member.img == "") return null;
 
     return ( 
-      <div className="container   beyoin-member-profile">
+      <div className="container beyoin-member-profile">
       <div className="row">
         <div className="col-10 my-3 col-md-6 mx-auto">
           <img src={require('../beyoinImages/'+ member.img)} alt="member" className="img-fluid" />

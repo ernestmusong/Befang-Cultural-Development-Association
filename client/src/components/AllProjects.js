@@ -7,7 +7,7 @@ const AllProjects =()=>{
    
   const [projects, setProjects] = useState([])
   useEffect(() =>{
-    let projects = allProjects.projects;
+    let projects = allProjects.projects
     setProjects(projects)
   }, [])
   return(
