@@ -482,10 +482,10 @@ nav{
     display: none;
   }
   nav{
-    position: fixed !important;
+    
     background-color: var(--darkBlue);
     width: 100vw;
-    display: none;
+    
   }
    
   .info-wrapper{
