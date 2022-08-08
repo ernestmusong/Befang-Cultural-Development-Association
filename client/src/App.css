@@ -466,7 +466,7 @@ nav{
 /*Footer*/
 .footer-bg {
   background-color: var(--clr-black) !important;
-  display: none !important;
+  display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   width: 100%;

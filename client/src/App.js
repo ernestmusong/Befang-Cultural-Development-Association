@@ -180,7 +180,7 @@ class App extends Component {
               <div className="dropdown">
               <Link to="/" style={{zIndex:"-1"}}>sub groups</Link>
               <div className="dropdown-content" style={{ height: height}}>
-                     <Link to="/social-groups/beyoin" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+                     <Link to="/befang-youths-initiative" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
                         Befang Youths Initiative
                       </Link>
                       <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
@@ -278,7 +278,7 @@ class App extends Component {
             <Route path="/all-projects" component={AllProjects} />
             <Route path="/projects/:projectId" component={SingleProject} />
             <Route path="/icons/:iconId" component={Icon} />
-            <Route path="/social-groups/beyoin" component={BefangYouthsInitiative} />
+            <Route path="/befang-youths-initiative" component={BefangYouthsInitiative} />
             <Route path="/contribute-page" component={ContributePage} />
             <Route path="/contributors" component={ListOfContributors} />
             <Route path="/branches/:branchId" component={ContributeDetails} />
