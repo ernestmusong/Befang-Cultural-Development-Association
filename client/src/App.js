@@ -90,183 +90,181 @@ class App extends Component {
     const { currentUser, showModeratorBoard, showAdminBoard, height, overFlow } = this.state;
     return (
       <>
- {/*top nav*/}
+            {/*top nav*/}
  <div className="top-nav">
-             <Link to='/'>
-               <div style={{width: "250px"}}>
-                  <img src= {logo} alt="logo" className="logo" style={{maxWidth: "100%"}} />
-              </div> 
-             </Link>
-               
-              <div className="top-nav-support">
-                  <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
-                      Support this website here !
-                  </Link>
-                  <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
-                       See List Of Supporters
-                  </Link>
-              </div>
-          
-            <a href="/" style={{color: "var(--mainOrange)"}}><FaMapMarkerAlt style={{marginRight: "1rem"}} /><span>Cameroon, North West Region, Menchum Division.</span></a>
-          
-           
-        </div>
-          {/*end top nav*/}
-         <nav id="nav">
-          <div className="nav-center">
-            <div className="nav-header">
-              <div className='mobile-logo-container'>
-              <Link to='/' onClick={() => {this.clearHeight()}}>
-                 <div style={{width: "100px", height: "100%"}} className="logo-div">
-                  <img src={logo} alt="logo" className="logo" style={{maxWidth: "100%"}}/>
-                </div> 
-                </Link>
-              </div>
-              <div className="moble-support">
-                  <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
-                      Support this website here !
-                  </Link>
-                  <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
-                       See List Of Supporters
-                  </Link>
-              </div>
-              {this.state.height === 0 ? (
-                  <div className="nav-toggle target" onClick={() => {this.handleClickMenu()}}>
-                  <FaAlignJustify className="target" style={{color:"var(--mainOrange)"}} />
-                </div>
-              ) : ( <div className=" nav-toggle"  onClick={() => {this.clearHeight()}}>
-                     <FaTimes style={{color:"var(--mainOrange)"}}/>
-                 </div>)}
-              
-            </div>
-            <div id='links-container' className="links-container target" style={{ height: height, overflow: overFlow}}>
-              <div className="links target"  >
-              <Link to="/" className='clear' onClick={() => {this.clearHeight()}}>
-               Home
-              </Link>
-              <div className="dropdown">
-              <Link to="/">branches</Link>
-              <div className="dropdown-content" style={{ height: height}}>
-                     <Link to="/comming-soon" className="clear dropdown-link"  onClick={() => {this.clearHeight()}}>
-                        bemenda
-                      </Link>
-                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                         buea
-                      </Link>
-                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                         muea
-                      </Link>
-                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                         Mutengene
-                      </Link>
-                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                         Limbe
-                      </Link>
-                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                         Douala
-                      </Link>
-                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                         Yaounde
-                      </Link>
-                      <Link to="/diaspora" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                         diaspora
-                      </Link>
-                  </div>
-                  
-              </div>
-              <Link to="/all-projects" className='clear' onClick={() => {this.clearHeight()}} >
-              Projects
-              </Link>
-              <div className="dropdown">
-              <Link to="/" style={{zIndex:"-1"}}>sub groups</Link>
-              <div className="dropdown-content" style={{ height: height}}>
-                     <Link to="/befang-youths-initiative" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                        Befang Youths Initiative
-                      </Link>
-                      <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-                         Befang Youths Association
-                      </Link>
-                  </div>
-                  
-              </div>
-              <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}} >
-               Constitution
-              </Link>
-              <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}} >
-               News
-              </Link>
-              {showModeratorBoard && (
-              
-                <Link to={"/mod"}>
-                  Moderator Board
-                </Link>
-            
-            )}
+ <Link to='/'>
+   <div style={{width: "250px"}}>
+      <img src= {logo} alt="logo" className="logo" style={{maxWidth: "100%"}} />
+  </div> 
+ </Link>
+   
+  <div className="top-nav-support">
+      <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
+          Support this website here !
+      </Link>
+      <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
+           See List Of Supporters
+      </Link>
+  </div>
 
-              {showAdminBoard && (
-               
-                <Link to={"/admin"}>
-                  Admin Board
-                </Link>
-               
-            )}
-            {showAdminBoard && (
-               
-               <Link to={"/users"}>
-                 users
-               </Link>
-              
-           )}
+<a href="/" style={{color: "var(--mainOrange)"}}><FaMapMarkerAlt style={{marginRight: "1rem"}} /><span>Cameroon, North West Region, Menchum Division.</span></a>
 
-             {currentUser && (
-               
-                <Link to={"/user"}>
-                  dashboard
-                </Link>
-              
-            )}
+
+</div>
+{/*end top nav*/}
+<nav id="nav">
+<div className="nav-center">
+<div className="nav-header">
+  <div className='mobile-logo-container'>
+  <Link to='/' onClick={() => {this.clearHeight()}}>
+     <div style={{width: "100px", height: "100%"}} className="logo-div">
+      <img src={logo} alt="logo" className="logo" style={{maxWidth: "100%"}}/>
+    </div> 
+    </Link>
+  </div>
+  <div className="moble-support">
+      <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
+          Support this website here !
+      </Link>
+      <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
+           See List Of Supporters
+      </Link>
+  </div>
+  {this.state.height === 0 ? (
+      <div className="nav-toggle target" onClick={() => {this.handleClickMenu()}}>
+      <FaAlignJustify className="target" style={{color:"var(--mainOrange)"}} />
+    </div>
+  ) : ( <div className=" nav-toggle"  onClick={() => {this.clearHeight()}}>
+         <FaTimes style={{color:"var(--mainOrange)"}}/>
+     </div>)}
+  
+</div>
+<div id='links-container' className="links-container target" style={{ height: height, overflow: overFlow}}>
+  <div className="links target"  >
+  <Link to="/" className='clear' onClick={() => {this.clearHeight()}}>
+   Home
+  </Link>
+  <div className="dropdown">
+  <Link to="/">branches</Link>
+  <div className="dropdown-content" style={{ height: height}}>
+         <Link to="/comming-soon" className="clear dropdown-link"  onClick={() => {this.clearHeight()}}>
+            bemenda
+          </Link>
+          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+             buea
+          </Link>
+          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+             muea
+          </Link>
+          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+             Mutengene
+          </Link>
+          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+             Limbe
+          </Link>
+          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+             Douala
+          </Link>
+          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+             Yaounde
+          </Link>
+          <Link to="/diaspora" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+             diaspora
+          </Link>
+      </div>
+      
+  </div>
+  <Link to="/all-projects" className='clear' onClick={() => {this.clearHeight()}} >
+  Projects
+  </Link>
+  <div className="dropdown">
+  <Link to="/" style={{zIndex:"-1"}}>sub groups</Link>
+  <div className="dropdown-content" style={{ height: height}}>
+         <Link to="/befang-youths-initiative" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+            Befang Youths Initiative
+          </Link>
+          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+             Befang Youths Association
+          </Link>
+      </div>
+      
+  </div>
+  <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}} >
+   Constitution
+  </Link>
+  <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}} >
+   News
+  </Link>
+  {showModeratorBoard && (
+  
+    <Link to={"/mod"}>
+      Moderator Board
+    </Link>
+
+)}
+
+  {showAdminBoard && (
+   
+    <Link to={"/admin"}>
+      Admin Board
+    </Link>
+   
+)}
+{showAdminBoard && (
+   
+   <Link to={"/users"}>
+     users
+   </Link>
+  
+)}
+
+ {currentUser && (
+   
+    <Link to={"/user"}>
+      dashboard
+    </Link>
+  
+)}
 
 {currentUser ? (
-              
-            <div style={{display: "flex", justifyContent: "spaceBetween", width: "10%"}}>
-               
-                <Link to={"/profile"}>
-                  {currentUser.username}
-                </Link>
-               
-               
-                <a href="/"  onClick={()=>this.logOut()} className="clear ml-2" >
-                  LogOut
-                </a>
-               
-            </div>
-          ) : (
-            <div className="register-link">
-              
-                <Link to={"/login"} className="clear nav-link" onClick={() => {this.clearHeight()}} >
-                  Login
-                </Link>
-               
+  
+<div style={{display: "flex", justifyContent: "spaceBetween", width: "10%"}}>
+   
+    <Link to={"/profile"}>
+      {currentUser.username}
+    </Link>
+   
+   
+    <a href="/"  onClick={()=>this.logOut()} className="clear ml-2" >
+      LogOut
+    </a>
+   
+</div>
+) : (
+<div className="register-link">
+  
+    <Link to={"/login"} className="clear nav-link" onClick={() => {this.clearHeight()}} >
+      Login
+    </Link>
+   
 
-               
-                <Link to={"/register"} className="clear nav-link" onClick={() => {this.clearHeight()}}>
-                  Register
-                </Link>
-               
-            </div>
-          )}
-                </div>
-                   
-              </div>
-            </div>
-        </nav>
-            <div className='info-wrapper'>
-              <p className='info text-uppercase'>
-             Welcome to the befang cultural and development association...<span className="text-uppercase">becuda</span>
-              </p>
-            </div>
-
-        <>
+   
+    <Link to={"/register"} className="clear nav-link" onClick={() => {this.clearHeight()}}>
+      Register
+    </Link>
+   
+</div>
+)}
+    </div>
+       
+  </div>
+</div>
+</nav>
+<div className='info-wrapper'>
+  <p className='info text-uppercase'>
+ Welcome to the befang cultural and development association...<span className="text-uppercase">becuda</span>
+  </p>
+</div>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
@@ -291,11 +289,10 @@ class App extends Component {
              
           </Switch>
           <Footer />
-        </>
 
         { /*<AuthVerify logOut={this.logOut}/> */ }
 
-      </>
+        </>
     );
   }
 }
