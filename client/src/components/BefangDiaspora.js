@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import befangDiaspora from '../db.json'
+import  {befangDiaspora} from '../db.json'
 import Title from './Title';
 import Title2 from './Title2';
 import CountUp from 'react-countup';
 
 const BefangDiaspora=()=>{
-
-    const [members, setMembers] = useState([])
-  useEffect(() =>{
-    let members = befangDiaspora.befangDiaspora;
-    setMembers(members)
-  }, [])
-  let executiveMembers = members.filter(member => member.executive === true)
+  let executiveMembers = befangDiaspora.filter(member => member.executive === true)
   return (
     <>
        <div className="page-hero" id="hero-img">
@@ -54,7 +48,7 @@ const BefangDiaspora=()=>{
      
       <Title title="all our members" />
       <div className='row beyoin-all-members-wrapper'>
-      {members.map(member => (
+      {befangDiaspora.map(member => (
         <Member key={member.id} {...member}/>
       ))}
       </div>

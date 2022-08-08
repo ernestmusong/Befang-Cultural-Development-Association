@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-  import greatIcons from '../db.json'
+  import {greatIcons} from '../db.json'
 //  import { allProjects } from '../Data';
 
 const GreatIcons =()=>{
-   
-  const [members, setMembers] = useState([])
-  useEffect(() =>{
-    let members = greatIcons.greatIcons;
-    setMembers(members)
-  }, [])
+    let members = greatIcons;
   return(
      <div className='container mb-4'>
         <div className=' great-icons'>

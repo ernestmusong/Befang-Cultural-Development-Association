@@ -2,7 +2,7 @@ import React from 'react'
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import { Link } from "react-router-dom";
-import {Branches} from '../Data';
+import {Branches} from '../db.json';
 
 function Counter() {
   return (

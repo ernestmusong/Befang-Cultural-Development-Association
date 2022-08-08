@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import Title3 from './Title3';
 import {Link } from "react-router-dom";
-import  webSupporters  from '../db.json';
+import  {webSupporters}  from '../db.json';
 import CommingSoon from './CommingSoon';
 
 const ListOfSupporters=() => {
-    const[supporters, setSupporters] = useState([])
-         
-    
-       useEffect(() =>{
-         
-         let supporters =webSupporters.webSupporters;
-           setSupporters(supporters)
-          } , [])
-          
+
+         let supporters = webSupporters;
+           
       if(supporters.length == 2) return <CommingSoon title="there are no supporters at the moment."/>;
   return (
     <div>

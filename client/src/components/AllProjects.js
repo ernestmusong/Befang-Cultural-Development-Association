@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-  import allProjects from '../db.json'
-//  import { allProjects } from '../Data';
+  import {projects} from '../db.json'
+
 
 const AllProjects =()=>{
    
-  const [projects, setProjects] = useState([])
-  useEffect(() =>{
-    let projects = allProjects.projects
-    setProjects(projects)
-  }, [])
+   
+  // useEffect(() =>{
+  //   let allProjects = projects
+  //   setAllProjects(allProjects)
+  // }, [])
   return(
     <div className="posts-container">
       {projects.map(project => (

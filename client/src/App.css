@@ -29,7 +29,7 @@
 }
 
 html, *, body {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   -webkit-overflow-scrolling: touch !important;
 }
 *,

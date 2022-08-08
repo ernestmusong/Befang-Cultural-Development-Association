@@ -116,7 +116,7 @@ class App extends Component {
           <div className="nav-center">
             <div className="nav-header">
               <div className='mobile-logo-container'>
-              <Link to='/'>
+              <Link to='/' onClick={() => {this.clearHeight()}}>
                  <div style={{width: "100px", height: "100%"}} className="logo-div">
                   <img src={logo} alt="logo" className="logo" style={{maxWidth: "100%"}}/>
                 </div> 

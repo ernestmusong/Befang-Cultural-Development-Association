@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from 'react'
-  import becudaExe from '../db.json'
-//  import { allProjects } from '../Data';
+  import {becudaExecutive} from '../db.json'
+ 
 
 const BecudaExe =()=>{
-   
-  const [members, setMembers] = useState([])
-  useEffect(() =>{
-    let members = becudaExe.becudaExecutive;
-    setMembers(members)
-  }, [])
   return(
     <div>
     <table className="table table-bordered">
@@ -19,7 +13,7 @@ const BecudaExe =()=>{
          </tr>
 </thead>
      <tbody>
-     {members.map(member =>(
+     {becudaExecutive.map(member =>(
               <tr className="bg-light" key={member.id}>
               <td className='text-uppercase'>{member.name}</td>
               <td className='text-uppercase'>{member.position}</td>  

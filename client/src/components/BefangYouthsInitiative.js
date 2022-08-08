@@ -1,17 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import befangYouthsInitiative from '../db.json'
+import {beyoin} from '../db.json'
 import Title from './Title';
 import Title2 from './Title2';
 import CountUp from 'react-countup';
 
 const BefangYouthsInitiative=()=>{
-
-    const [members, setMembers] = useState([])
-  useEffect(() =>{
-    let members = befangYouthsInitiative.beyoin;
-    setMembers(members)
-  }, [])
+  let members = beyoin;
+     
   let executiveMembers = members.filter(member => member.executive === true)
   return (
     <>
