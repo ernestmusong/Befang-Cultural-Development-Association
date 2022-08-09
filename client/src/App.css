@@ -108,12 +108,10 @@ text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
 
 /* navbar */
 nav{
-  left: 0;
-  right: 0;
-  top: 0;
+  width: 100%;
+  max-width: 100vw;
   z-index: 2;
   background-color: var(--clr-white);
-
 }
 .nav-center{
   height: 100%;
@@ -471,7 +469,7 @@ nav{
   justify-content: center !important;
   width: 100%;
   max-width: 100vw;
-   
+  
 }
 
 /* end of footer */
@@ -482,9 +480,8 @@ nav{
     display: none;
   }
   nav{
-    position: fixed !important;
+    /* position: fixed !important; */
     background-color: var(--darkBlue);
-    width: 100vw;
     
   }
    
