@@ -189,6 +189,15 @@ class App extends Component {
       </div>
       
   </div>
+  <div className="dropdown">
+  <Link to="/" style={{zIndex:"-1"}}>contributions</Link>
+  <div className="dropdown-content" style={{ height: height}}>
+         <Link to="/contributors" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+            Water Project
+          </Link>
+      </div>
+      
+  </div>
   <Link to="/comming-soon" className='clear'  onClick={() => {this.clearHeight()}}>
    Constitution
   </Link>
