@@ -134,65 +134,65 @@ class App extends Component {
       <div className="nav-toggle target" onClick={() => {this.handleClickMenu()}}>
       <FaAlignJustify className="target" style={{color:"var(--mainOrange)"}} />
     </div>
-  ) : ( <div className=" nav-toggle"  onClick={() => {this.clearHeight()}}>
+  ) : ( <div className=" nav-toggle">
          <FaTimes style={{color:"var(--mainOrange)"}}/>
      </div>)}
   
 </div>
-<div id='links-container' className="links-container target" style={{ height: height, overflow: overFlow}}>
+<div id='links-container' className="links-container target" style={{ height: 0, overflow: overFlow}}>
   <div className="links target"  >
-  <Link to="/" className='clear' onClick={() => {this.clearHeight()}}>
+  <Link to="/" className='clear' >
    Home
   </Link>
   <div className="dropdown">
   <Link to="/">branches</Link>
   <div className="dropdown-content" style={{ height: height}}>
-         <Link to="/comming-soon" className="clear dropdown-link"  onClick={() => {this.clearHeight()}}>
+         <Link to="/comming-soon" className="clear dropdown-link"  >
             bemenda
           </Link>
-          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+          <Link to="/comming-soon" className="clear dropdown-link" >
              buea
           </Link>
-          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+          <Link to="/comming-soon" className="clear dropdown-link" >
              muea
           </Link>
-          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+          <Link to="/comming-soon" className="clear dropdown-link" >
              Mutengene
           </Link>
-          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+          <Link to="/comming-soon" className="clear dropdown-link" >
              Limbe
           </Link>
-          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+          <Link to="/comming-soon" className="clear dropdown-link" >
              Douala
           </Link>
-          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+          <Link to="/comming-soon" className="clear dropdown-link" >
              Yaounde
           </Link>
-          <Link to="/diaspora" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+          <Link to="/diaspora" className="clear dropdown-link" >
              diaspora
           </Link>
       </div>
       
   </div>
-  <Link to="/all-projects" className='clear' onClick={() => {this.clearHeight()}} >
+  <Link to="/all-projects" className='clear'  >
   Projects
   </Link>
   <div className="dropdown">
   <Link to="/" style={{zIndex:"-1"}}>sub groups</Link>
   <div className="dropdown-content" style={{ height: height}}>
-         <Link to="/befang-youths-initiative" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+         <Link to="/befang-youths-initiative" className="clear dropdown-link" >
             Befang Youths Initiative
           </Link>
-          <Link to="/comming-soon" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+          <Link to="/comming-soon" className="clear dropdown-link" >
              Befang Youths Association
           </Link>
       </div>
       
   </div>
-  <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}} >
+  <Link to="/comming-soon" className='clear'  >
    Constitution
   </Link>
-  <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}} >
+  <Link to="/comming-soon" className='clear' >
    News
   </Link>
   {showModeratorBoard && (
