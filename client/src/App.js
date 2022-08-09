@@ -123,10 +123,10 @@ class App extends Component {
     </Link>
   </div>
   <div className="moble-support">
-      <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
+      <Link to="/web-creator" style={{color: "Var(--heroWhite)"}} onClick={() => {this.clearHeight()}}>
           Support this website here !
       </Link>
-      <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
+      <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}} onClick={() => {this.clearHeight()}}>
            See List Of Supporters
       </Link>
   </div>
@@ -174,7 +174,7 @@ class App extends Component {
       </div>
       
   </div>
-  <Link to="/all-projects" className='clear'  >
+  <Link to="/all-projects" className='clear'  onClick={() => {this.clearHeight()}}>
   Projects
   </Link>
   <div className="dropdown">
