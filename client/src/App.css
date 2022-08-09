@@ -17,6 +17,7 @@
   --clr-grey-4: hsl(209, 28%, 39%);
   --clr-white: #f0f0f0;
   --softWhite: #FBFAF5;
+  --softGrey: #acaea9;
   --heroWhite: #ffe6ff;
   --clr-black: #000;
   --lightRed: #ff65bd;
@@ -74,11 +75,11 @@ justify-content: space-around;
   padding-left: 2rem;
   
 }
-.top-nav-support, .moble-support{
+.support{
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Clip";
+  font-family: "Clip"; 
    color: var(--softWhite); 
    text-transform: capitalize;
  

@@ -98,11 +98,11 @@ class App extends Component {
   </div> 
  </Link>
    
-  <div className="top-nav-support">
-      <Link to="/web-creator" style={{color: "Var(--heroWhite)"}}>
-          Support this website here !
+  <div className="support">
+      <Link to="/web-creator" className="support">
+          Support the website !
       </Link>
-      <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}}>
+      <Link to="/web-supporters" className="support">
            See List Of Supporters
       </Link>
   </div>
@@ -123,10 +123,10 @@ class App extends Component {
     </Link>
   </div>
   <div className="moble-support">
-      <Link to="/web-creator" style={{color: "Var(--heroWhite)"}} onClick={() => {this.clearHeight()}}>
-          Support this website here !
+      <Link to="/web-creator" className="support"  onClick={() => {this.clearHeight()}}>
+          Support the website !
       </Link>
-      <Link to="/web-supporters" style={{color: "Var(--heroWhite)"}} onClick={() => {this.clearHeight()}}>
+      <Link to="/web-supporters" className="support" onClick={() => {this.clearHeight()}}>
            See List Of Supporters
       </Link>
   </div>
