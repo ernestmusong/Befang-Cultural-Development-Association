@@ -81,9 +81,9 @@ justify-content: space-around;
   font-family: "Clip";
    color: #fff; 
    text-transform: capitalize;
-text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
+/* text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2,
       0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2,
-      0 0 90px #00fff2;
+      0 0 90px #00fff2; */
 }
 .text1, .text2, .call-link, .whatsapp-link {
 
