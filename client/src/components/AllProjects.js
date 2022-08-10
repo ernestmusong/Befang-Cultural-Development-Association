@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
   import {projects} from '../db.json'
 import Comments from './facebookComments';
+import Title4 from './Title4';
 
 
 const AllProjects =()=>{
@@ -12,7 +13,9 @@ const AllProjects =()=>{
         <Project key={project.id} {...project}/>
       ))}
  </div>
+ <Title4 title='please leave your commments below' />
  <Comments />
+
  </>
   )
 }
