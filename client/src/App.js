@@ -141,11 +141,11 @@ class App extends Component {
 </div>
 <div id='links-container' className="links-container target" style={{ height: height, overflow: overFlow}}>
   <div className="links target"  >
-  <Link to="/" className='clear' >
+  <Link to="/" className='clear'  onClick={() => {this.clearHeight()}}>
    Home
   </Link>
   <div className="dropdown">
-  <Link to="/">branches</Link>
+  <Link to="#">branches</Link>
   <div className="dropdown-content" style={{ height: height}}>
          <Link to="/comming-soon" className="clear dropdown-link"  onClick={() => {this.clearHeight()}}>
             bemenda
@@ -178,7 +178,7 @@ class App extends Component {
   Projects
   </Link>
   <div className="dropdown">
-  <Link to="/" style={{zIndex:"-1"}}>sub groups</Link>
+  <Link to="#" style={{zIndex:"-1"}}>sub groups</Link>
   <div className="dropdown-content" style={{ height: height}}>
          <Link to="/befang-youths-initiative" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
             Befang Youths Initiative
@@ -189,21 +189,20 @@ class App extends Component {
       </div>
       
   </div>
-  <div className="dropdown">
-  <Link to="/" style={{zIndex:"-1"}}>contributions</Link>
-  <div className="dropdown-content" style={{ height: height}}>
-         <Link to="/contributors" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
-            Water Project
-          </Link>
-      </div>
-      
-  </div>
   <Link to="/comming-soon" className='clear'  onClick={() => {this.clearHeight()}}>
    Constitution
   </Link>
   <Link to="/comming-soon" className='clear' onClick={() => {this.clearHeight()}}>
    News
   </Link>
+  <div className="dropdown">
+  <Link to="#" style={{zIndex:"-1"}}>contributions</Link>
+  <div className="dropdown-content" style={{ height: height}}>
+         <Link to="/contributors" className="clear dropdown-link" onClick={() => {this.clearHeight()}}>
+            Water Project
+          </Link>
+      </div>
+  </div>
   {showModeratorBoard && (
   
     <Link to={"/mod"}>

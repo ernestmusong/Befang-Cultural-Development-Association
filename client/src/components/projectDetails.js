@@ -33,17 +33,16 @@ const ProjectDetails = (props) => {
          if(project.img == "") return null;
 
     return ( 
-      <div className="container   project-details">
+      <>
+      <div className="container project-details">
       <div className="row">
         <div className="col-10 my-3 col-md-6 mx-auto">
           <img src={require('../projectImages/'+ project.img)} alt="project" className="img-fluid" />
         </div>
         {/*project text*/}
         <div className="col-10 my-3 mx-auto  col-md-6  text-capitalize">
-          <h2  style={{color:"Var(--heroWhite)"}}>{project.title} </h2>
-          {/* <h4 className="title-text text-uppercase text-muted mt-3 mb-2">
-            made by: <span className="text-uppercase"> {company} </span>
-          </h4> */}
+          <h1  style={{color:"Var(--heroWhite)"}}>{project.title} </h1>
+          
             <p style={{color:"Var(--softWhite)"}}>{project.body}</p>
 
             <p style={{color:"Var(--lightRed)"}}>
@@ -80,6 +79,10 @@ const ProjectDetails = (props) => {
         </div>
       </div>
     </div>
+    <div className='bg-light'>
+       <div class="fb-comments" data-href="https://becuda.herokuapp.com/all-projects" data-width="" data-numposts="5" data-colorscheme="dark"></div>
+ </div>
+    </>
   );
 }
  
