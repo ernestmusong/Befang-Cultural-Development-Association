@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import allProjects from '../db.json'
  import { Link } from 'react-router-dom';
-
+ import Comments from './facebookComments';
+ import Title4 from './Title4';
   
  /**
   *@function ProjectDetails
@@ -29,7 +30,7 @@ const ProjectDetails = (props) => {
           setProject(project)
          }
         
-         , [project, projectId])
+         , [ projectId])
          if(project.img == "") return null;
 
     return ( 
@@ -79,9 +80,8 @@ const ProjectDetails = (props) => {
         </div>
       </div>
     </div>
-    <div className='bg-light'>
-       <div class="fb-comments" data-href="https://becuda.herokuapp.com/all-projects" data-width="" data-numposts="5" data-colorscheme="dark"></div>
- </div>
+    <Title4 title='please leave your commments below' />
+   <Comments />
     </>
   );
 }
