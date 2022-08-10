@@ -13,7 +13,7 @@ function Comments() {
         
   return (
     <div className='bg-light'>
-    <div class="fb-comments" data-href={comments.dataHref} data-width={comments.dataWidth} data-numposts={comments.dataNumposts} data-colorscheme={comments.dataColorScheme}></div>
+    <div className="fb-comments" data-href={comments.dataHref} data-width={comments.dataWidth} data-numposts={comments.dataNumposts} data-colorscheme={comments.dataColorScheme}></div>
     </div>
   )
 }
