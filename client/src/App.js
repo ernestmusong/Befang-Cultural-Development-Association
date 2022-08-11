@@ -100,7 +100,7 @@ class App extends Component {
    
   <div className="support">
       <Link to="/web-creator" className="support">
-      Click here to support the website !
+      Click here to support the website
       </Link>
       <Link to="/web-supporters" className="support">
            See List Of Supporters
@@ -124,7 +124,7 @@ class App extends Component {
   </div>
   <div className="moble-support">
       <Link to="/web-creator" className="support"  onClick={() => {this.clearHeight()}}>
-         Click here to support the website !
+         Click here to support the website
       </Link>
       <Link to="/web-supporters" className="support" onClick={() => {this.clearHeight()}}>
            See List Of Supporters
