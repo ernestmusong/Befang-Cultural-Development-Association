@@ -270,7 +270,7 @@ class App extends Component {
 </nav>
 <div className='info-wrapper'>
   <p className='info text-uppercase'>
- Welcome to the befang cultural and development association...<span className="text-uppercase">becuda</span>
+ Welcome to befang cultural and development association...<span className="text-uppercase">becuda</span>
   </p>
 </div>
           <PopupModal />

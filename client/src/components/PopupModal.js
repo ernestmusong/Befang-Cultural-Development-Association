@@ -11,7 +11,7 @@ function PopupModal() {
      <>
          <div className={"modal fade" + (show ? " show d-block" : " d-none")} id="exampleModalCenter" tabIndex="-1" role="dialog" >
                     <div className="modal-dialog modal-dialog-centered" role="document">
-                        <div className="modal-content">
+                        <div className="modal-content" style={{backgrounColor:'white'}}>
                             <div className="modal-header">
                                 <h5 className="modal-title text-danger text-uppercase mx-auto">Important !!!</h5>
                                 <button type="button" className="close" onClick={()=>handleShow()}>
