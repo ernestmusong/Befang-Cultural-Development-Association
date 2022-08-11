@@ -15,7 +15,7 @@ function ContributePage() {
 
              )}
          </div>
-        
+        <div className='mx-auto text-center'> <Link to='/all-projects' className="text-white">Back to projects</Link></div>
     </>
   )
 }

@@ -7,7 +7,7 @@ function ContributeNowLink() {
     <Link to='/contribute-page' className="text-white">
            Contribute now
     </Link>
-    <Link to='/' className="text-white">
+    <Link to='/all-projects' className="text-white">
                   Go Back
      </Link>
 </div>
