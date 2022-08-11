@@ -16,7 +16,7 @@ import BoardAdmin from "./components/board-admin.component";
 import Footer from "./components/footer";
 import SingleProject from "./components/SingleProject";
 import Icon from "./components/Icon";
-// import AuthVerify from "./common/auth-verify";
+import  PopupModal from "./components/PopupModal";
 import EventBus from "./common/EventBus";
 import BefangYouthsInitiative from "./components/BefangYouthsInitiative";
 import CommingSoon from "./components/CommingSoon";
@@ -273,6 +273,7 @@ class App extends Component {
  Welcome to the befang cultural and development association...<span className="text-uppercase">becuda</span>
   </p>
 </div>
+          <PopupModal />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />

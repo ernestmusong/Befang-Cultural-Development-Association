@@ -47,8 +47,12 @@ body {
   font-size: 0.875rem;
   box-sizing: border-box; 
 }
-
-
+/* popup modal */
+.modal-footer{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+}
 a {
   text-decoration: none;
 }
